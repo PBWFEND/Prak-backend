@@ -1,0 +1,22 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS folder attributes
+._*
+
+# macOS Trash
+.Trashes
+
+# macOS Spotlight files
+.Spotlight-V100
+
+# macOS volume info
+.VolumeIcon.icns
+
+# macOS Time Machine files
+.Backup*
+
+# macOS resource fork files
+*.AppleDouble
