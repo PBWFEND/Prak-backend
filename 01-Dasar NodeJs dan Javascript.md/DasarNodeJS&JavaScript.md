@@ -1,12 +1,10 @@
-
-
-### **Modul Praktikum 1: Dasar NodeJS & JavaScript**
+# **Modul Praktikum 1: Dasar NodeJS & JavaScript**
 
 **Topik:** Variabel, Tipe Data, dan Method String
 
 -----
 
-### **A. Tujuan Pembelajaran**
+## **A. Tujuan Pembelajaran**
 
 Setelah menyelesaikan modul ini, mahasiswa diharapkan mampu:
 
@@ -15,17 +13,17 @@ Setelah menyelesaikan modul ini, mahasiswa diharapkan mampu:
 3.  Menggunakan *string methods* untuk memanipulasi teks.
 4.  Membuat dan menjalankan program NodeJS sederhana untuk menampilkan biodata di terminal.
 
-### **B. Alat dan Bahan**
+## **B. Alat dan Bahan**
 
 1.  Komputer/Laptop dengan sistem operasi (Windows, macOS, atau Linux).
 2.  **Node.js** terinstal. (Pastikan sudah terinstal dengan menjalankan `node -v` di terminal).
 3.  **Visual Studio Code** atau teks editor lainnya.
 
-### **C. Dasar Teori**
+## **C. Dasar Teori**
 
 JavaScript adalah bahasa pemrograman yang menjadi fondasi pengembangan web modern. NodeJS memungkinkan kita menjalankan JavaScript di sisi server (*backend*), bukan hanya di browser.
 
-#### **1. Variabel**
+## **1. Variabel**
 
 Variabel adalah "wadah" untuk menyimpan nilai atau data. Di JavaScript modern, ada tiga cara untuk mendeklarasikan variabel:
 
@@ -41,7 +39,7 @@ Variabel adalah "wadah" untuk menyimpan nilai atau data. Di JavaScript modern, a
     ```
   * `var`: Cara lama untuk mendeklarasikan variabel. Sebaiknya dihindari dalam kode modern karena memiliki cakupan (*scope*) yang bisa membingungkan.
 
-#### **2. Tipe Data**
+## **2. Tipe Data**
 
 Tipe data adalah jenis nilai yang dapat disimpan dalam variabel. Tipe data dasar (primitif) di JavaScript antara lain:
 
@@ -51,7 +49,7 @@ Tipe data adalah jenis nilai yang dapat disimpan dalam variabel. Tipe data dasar
   * **Null**: Mewakili ketiadaan nilai yang disengaja.
   * **Undefined**: Mewakili variabel yang telah dideklarasikan tetapi belum diberi nilai.
 
-#### **3. String Methods**
+## **3. String Methods**
 
 String memiliki fungsi bawaan (*methods*) yang sangat berguna untuk memanipulasi teks. Beberapa yang sering digunakan:
 
@@ -75,7 +73,7 @@ console.log(pesan); // Output: Halo, nama saya Budi.
 
 -----
 
-### **D. Langkah-Langkah Praktikum**
+## **D. Langkah-Langkah Praktikum**
 
 **Tujuan:** Membuat program sederhana untuk menampilkan biodata diri di konsol menggunakan NodeJS.
 
@@ -156,7 +154,7 @@ Status Aktif    : true
 
 -----
 
-### **E. Latihan Tambahan**
+## **E. Latihan Tambahan**
 
 1.  **Modifikasi Program**: Tambahkan variabel baru seperti `jurusan` dan `universitas`. Tampilkan juga di output biodata.
 2.  **Eksplorasi Method**: Coba gunakan *string method* lain seperti `.toLowerCase()`, `.replace()`, atau `.trim()` pada variabel yang ada dan tampilkan hasilnya.

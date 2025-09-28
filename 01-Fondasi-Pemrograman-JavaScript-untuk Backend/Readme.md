@@ -1,1 +1,0 @@
-Fokus Penguasaan dasar JavaScript modern yang akan dipakai untuk pengembangan backend.
