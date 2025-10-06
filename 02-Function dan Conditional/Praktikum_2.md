@@ -15,7 +15,7 @@ Setelah menyelesaikan modul ini, mahasiswa diharapkan mampu:
 4.  Menggunakan `switch-case` sebagai alternatif untuk percabangan yang lebih spesifik.
 5.  Membangun program sederhana yang mengandung logika bisnis dasar.
 
-## **B. Alat dan Bahan**
+## **B. Tools Pendukung**
 
 1.  Komputer/Laptop dengan Node.js dan Visual Studio Code yang sudah terinstal.
 2.  Folder proyek `praktikum-2` (dianjurkan membuat folder baru untuk setiap modul).
@@ -174,43 +174,4 @@ Mahasiswa Budi (Nilai: 78) mendapatkan grade: C (Cukup)
 Mahasiswa Caca (Nilai: 55) mendapatkan grade: E (Gagal)
 Mahasiswa Deni (Nilai: 105) mendapatkan grade: Skor tidak valid
 -------------------------------
-```
-
------
-
-## **E. Studi Kasus 2: Program Kasir Kafe Sederhana**
-
-#### **Skenario**
-
-Anda diminta membuat program kasir sederhana untuk "Kafe Koding". Program ini harus bisa menghitung total harga pesanan berdasarkan menu yang dipilih dan memberikan diskon jika total pembelian mencapai nominal tertentu.
-
-#### **Tugas**
-
-Buatlah script NodeJS (`kasir.js`) yang memiliki sebuah fungsi `hitungTotalPesanan`.
-
-1.  Fungsi ini menerima dua parameter: `kodeMenu` (string) dan `jumlah` (number).
-2.  Gunakan `switch-case` untuk menentukan harga satuan berdasarkan `kodeMenu`:
-      * `KOPI`: Rp 25.000
-      * `TEH`: Rp 20.000
-      * `PIZZA`: Rp 55.000
-      * Jika kode tidak ada, harga adalah 0.
-3.  Hitung **subtotal** (harga satuan × jumlah).
-4.  Gunakan `if-else` untuk logika **diskon**:
-      * Jika subtotal di atas Rp 100.000, berikan diskon 15%.
-      * Jika subtotal di atas Rp 50.000, berikan diskon 10%.
-      * Jika tidak, tidak ada diskon.
-5.  Fungsi harus mengembalikan (*return*) sebuah string terformat yang berisi rincian pesanan (nama menu, jumlah, subtotal, diskon, dan total akhir).
-
-**Contoh Output Panggilan Fungsi:**
-`hitungTotalPesanan("PIZZA", 2)` akan menghasilkan output seperti:
-
-```
---- Struk Pembelian Kafe Koding ---
-Menu Dipesan    : Pizza
-Jumlah          : 2
-Subtotal        : Rp 110.000
-Diskon (15%)    : - Rp 16.500
------------------------------------
-Total Bayar     : Rp 93.500
---- Terima Kasih ---
 ```

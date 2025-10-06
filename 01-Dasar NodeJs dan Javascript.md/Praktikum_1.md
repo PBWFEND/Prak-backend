@@ -13,7 +13,7 @@ Setelah menyelesaikan modul ini, mahasiswa diharapkan mampu:
 3.  Menggunakan *string methods* untuk memanipulasi teks.
 4.  Membuat dan menjalankan program NodeJS sederhana untuk menampilkan biodata di terminal.
 
-## **B. Alat dan Bahan**
+## **B. Tools Pendukung**
 
 1.  Komputer/Laptop dengan sistem operasi (Windows, macOS, atau Linux).
 2.  **Node.js** terinstal. (Pastikan sudah terinstal dengan menjalankan `node -v` di terminal).
