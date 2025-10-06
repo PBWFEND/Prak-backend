@@ -22,86 +22,159 @@ Setelah menyelesaikan modul ini, mahasiswa diharapkan mampu:
 
 ## **C. Dasar Teori**
 
-Setelah mampu menyimpan data dalam variabel, langkah selanjutnya adalah mengolah data tersebut. Di sinilah *function* dan *conditional logic* memegang peranan kunci dalam logika *backend*.
+Setelah mampu menyimpan data dalam variabel, langkah selanjutnya adalah mengolah data tersebut. 
 
-#### **1. Function**
+Di sinilah *function* dan *conditional logic* memegang peranan kunci dalam logika *backend*.
 
-**Fungsi** adalah blok kode yang dirancang untuk melakukan tugas tertentu dan dapat dipanggil berulang kali. Ini membantu kita menghindari penulisan kode yang sama berulang-ulang (*Don't Repeat Yourself* / DRY).
+## 1. Apa Itu Function?
 
-  * **Deklarasi Fungsi**: Cara mendefinisikan sebuah fungsi.
-    ```javascript
-    function sapaPengguna(nama) { // 'nama' adalah parameter
-      return `Halo, selamat datang ${nama}!`;
-    }
-    ```
-  * **Memanggil Fungsi**: Menggunakan fungsi yang telah dibuat.
-    ```javascript
-    let pesanSalam = sapaPengguna("Andi"); // "Andi" adalah argumen
-    console.log(pesanSalam); // Output: Halo, selamat datang Andi!
-    ```
-  * **Parameter & Return**: **Parameter** adalah variabel input untuk fungsi, sedangkan `return` adalah kata kunci untuk memberikan nilai output dari fungsi. Sebuah fungsi tidak harus memiliki parameter atau `return`.
+Bayangin kamu punya resep mie instan. Setiap kali lapar, kamu tinggal ikutin resep itu. Nah, *function* di coding itu mirip banget: semacam “resep” atau “template” yang bisa dipakai berulang kali buat ngerjain tugas tertentu.
 
-#### **2. Conditional Logic (Logika Percabangan)**
+### Kenapa Harus Pakai Function?
+- Biar nggak nulis kode yang sama terus-terusan (*Don't Repeat Yourself* alias DRY).
+- Bisa dipakai berkali-kali, tinggal panggil aja.
+- Bikin kode lebih rapi dan gampang dipahami.
 
-Conditional memungkinkan program untuk mengambil keputusan dan menjalankan blok kode yang berbeda berdasarkan kondisi tertentu.
+---
 
-  * **`if-else`**: Struktur paling umum untuk percabangan. Logikanya seperti "Jika kondisi A terpenuhi, lakukan X. Jika tidak, lakukan Y."
+## Cara Bikin Function
 
-      * `if`: Blok kode yang dieksekusi jika kondisi bernilai `true`.
-      * `else if`: Memeriksa kondisi lain jika kondisi `if` sebelumnya `false`.
-      * `else`: Blok kode yang dieksekusi jika semua kondisi sebelumnya `false`.
+```javascript
+function sapaPengguna(nama) {
+  return `Halo, selamat datang ${nama}!`;
+}
+```
 
-    **Contoh:**
+Penjelasan:
 
-    ```javascript
-    let nilai = 85;
-    if (nilai > 90) {
-      console.log("Nilai Anda A");
-    } else if (nilai > 80) {
-      console.log("Nilai Anda B"); // Ini yang akan dieksekusi
-    } else {
-      console.log("Nilai Anda C");
-    }
-    ```
+- `function` = kata kunci buat bikin function.
+- `sapaPengguna` = nama function-nya (bebas, asal jelas).
+- `(nama)` = parameter, kayak input yang kita masukin.
+- `return` = hasil yang dikasih balik sama function.
 
-  * **`switch-case`**: Pilihan yang baik sebagai pengganti `if-else if-else` yang panjang, terutama saat memeriksa satu variabel terhadap banyak kemungkinan nilai.
+---
 
-    **Contoh:**
+## Cara Pakai Function
 
-    ```javascript
-    let hari = "Senin";
-    switch (hari) {
-      case "Senin":
-        console.log("Hari ini mulai bekerja!");
-        break; // 'break' penting agar tidak melanjutkan ke case berikutnya
-      case "Sabtu":
-      case "Minggu":
-        console.log("Hari ini libur!");
-        break;
-      default:
-        console.log("Hari biasa.");
-    }
-    ```
+```javascript
+let pesanSalam = sapaPengguna("Andi");
+console.log(pesanSalam); // Output: Halo, selamat datang Andi!
+```
 
-  * **Operator Perbandingan**: Untuk membuat kondisi, kita butuh operator seperti:
+Penjelasan:
 
-      * `===` (sama dengan nilai DAN tipe datanya) -\> **Sangat disarankan**
-      * `!==` (tidak sama dengan nilai DAN tipe datanya)
-      * `>` (lebih besar dari), `<` (lebih kecil dari)
-      * `>=` (lebih besar atau sama dengan), `<=` (lebih kecil atau sama dengan)
+- `"Andi"` = argumen, nilai yang dikirim ke parameter `nama`.
+- `console.log` = buat nampilin hasilnya di layar.
 
------
+---
 
-## **D. Langkah-Langkah Praktikum**
+## Parameter vs Return
+
+| Istilah     | Penjelasan |
+|-------------|-------------------------|
+| Parameter   | Input yang kamu masukin ke function, kayak nama, angka, dll. |
+| Return      | Output yang dikasih balik sama function, bisa ditampung atau ditampilkan. |
+
+---
+
+## Analogi Simpel
+
+Bayangin kamu bikin function `buatMie(instan)`:
+- Parameter = jenis mie yang kamu pilih (Indomie, Mie Sedaap, dll).
+- Return = mie yang udah jadi dan siap dimakan 🍜.
+
+
+## 2. Apa Itu Conditional Logic?
+
+Bayangin kamu lagi main game RPG. Kalau HP kamu di atas 80%, kamu bisa serang musuh. Kalau di bawah itu, kamu harus healing dulu. Nah, keputusan kayak gitu dalam coding disebut *logika percabangan*.
+
+Dengan conditional, program bisa:
+
+- Mengecek kondisi tertentu
+- Menjalankan aksi yang berbeda tergantung hasil pengecekan
+
+
+## `if-else:` Logika Percabangan Paling Basic
+
+```javascript
+let nilai = 85;
+
+if (nilai > 90) {
+  console.log("Nilai Anda A");
+} else if (nilai > 80) {
+  console.log("Nilai Anda B"); // Ini yang jalan
+} else {
+  console.log("Nilai Anda C");
+}
+```
+
+Penjelasan:
+
+- `if` = kalau kondisi benar, jalankan ini.
+- `else if` = kalau kondisi pertama salah, cek kondisi lain.
+- `else` = kalau semua kondisi salah, jalankan ini.
+
+Analogi:
+
+> Kalau kamu dapet 90+ di game, dapet rank S. Kalau 80+, rank A. Sisanya rank B.
+
+## switch-case: Buat Banyak Pilihan
+
+```javascript
+let hari = "Senin";
+
+switch (hari) {
+  case "Senin":
+    console.log("Hari ini mulai bekerja!");
+    break;
+  case "Sabtu":
+  case "Minggu":
+    console.log("Hari ini libur!");
+    break;
+  default:
+    console.log("Hari biasa.");
+}
+```
+
+Penjelasan:
+
+- `switch` = kayak menu pilihan.
+- `case` = tiap pilihan punya aksi sendiri.
+- `break` = biar nggak lanjut ke pilihan lain.
+- `default` = kalau nggak ada yang cocok.
+
+Analogi:
+
+> Kamu pilih karakter: "Mage", "Warrior", atau "Healer". Setiap pilihan punya skill unik.
+
+---
+
+## Operator Perbandingan
+
+| Operator | Artinya | Contoh |
+|---------|--------|--------|
+| `===`   | Sama persis (nilai & tipe data) | `"5" === 5` → ❌ |
+| `!==`   | Tidak sama persis | `"5" !== 5` → ✅ |
+| `>`     | Lebih besar dari | `10 > 5` → ✅ |
+| `<`     | Lebih kecil dari | `3 < 7` → ✅ |
+| `>=`    | Lebih besar atau sama | `5 >= 5` → ✅ |
+| `<=`    | Lebih kecil atau sama | `4 <= 6` → ✅ |
+
+Tips :
+
+> Selalu pakai `===` biar nggak kena jebakan tipe data yang beda!
+
+
+# D. Langkah-Langkah Praktikum
 
 **Tujuan:** Membuat program untuk menentukan grade kelulusan mahasiswa berdasarkan nilai yang diinput.
 
-#### **Langkah 1: Siapkan File**
+## **Langkah 1: Siapkan File**
 
 1.  Buat folder baru bernama `praktikum-2`.
 2.  Di dalam folder tersebut, buat file baru dengan nama `grade_mahasiswa.js`.
 
-#### **Langkah 2: Tulis Kode Program**
+## **Langkah 2: Tulis Kode Program**
 
 1.  Buka file `grade_mahasiswa.js`.
 2.  Ketik kode di bawah ini. Kode ini berisi sebuah fungsi untuk menentukan grade dan beberapa contoh pemanggilannya.
@@ -156,7 +229,7 @@ console.log("-------------------------------");
 
 ```
 
-#### **Langkah 3: Jalankan dan Analisis Hasil**
+## **Langkah 3: Jalankan dan Analisis Hasil**
 
 1.  Buka terminal di VS Code (`Ctrl` + \`\`\`).
 2.  Jalankan program dengan perintah:
