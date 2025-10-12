@@ -26,6 +26,6 @@ Buatlah script `penjualan.js`.
 3.  **Tugas 2 (Map):** Buat sebuah array baru bernama `laporanPenjualan`. Transformasi `transaksi` menjadi array string dengan format: `"ID: [id], Produk: [produk], Total: Rp [harga * jumlah]"`. Format total harga agar mudah dibaca (gunakan `.toLocaleString('id-ID')`).
 
 4.  **Tugas 3 (Reduce - *Challenge*):** Hitung total pendapatan dari semua transaksi.
-      * *Petunjuk*: Anda bisa menggunakan `for` loop, atau jika ingin tantangan, cari tahu cara menggunakan method `array.reduce()`.
+      * *Petunjuk*: Anda bisa menggunakan `for` loop, atau jika ingin tantangan, cari tahu cara menggunakan method [array.reduce()](https://sko.dev/referensi/javascript/array-reduce-es6/)
 
 5.  Cetak semua hasil (array `transaksiMouse`, array `laporanPenjualan`, dan total pendapatan) ke konsol dengan judul yang jelas.
