@@ -1,10 +1,12 @@
-# **E. Studi Kasus 6: Inheritance & Encapsulation**
+# Studi Kasus 6: Inheritance & Encapsulation
+
+## **1. Inheritance & Encapsulation**
 
 ## **Skenario**
 
 Kita akan memperluas class `Mahasiswa`. Seorang `Mahasiswa` pada dasarnya adalah `Orang`. Kita akan membuat class `Orang` sebagai *parent*, dan `Mahasiswa` sebagai *child*. Kita juga akan mengenkapsulasi data SKS agar tidak bisa diubah sembarangan.
 
-#### **Tugas**
+### **Tugas**
 
 Buat file `kampus.js`.
 
@@ -16,75 +18,10 @@ Buat file `kampus.js`.
 6.  Buat method `lihatSKS()` untuk menampilkan `#sks`.
 7.  Buat instance-nya dan demonstrasikan.
 
-**Contoh Solusi (`kampus.js`):**
 
-```javascript
-class Orang {
-  constructor(nama, umur) {
-    this.nama = nama;
-    this.umur = umur;
-  }
-  
-  sapa() {
-    console.log(`Halo, nama saya ${this.nama}, umur ${this.umur} tahun.`);
-  }
-}
+## **2. Sistem Inventaris Toko Online**
 
-class Mahasiswa extends Orang {
-  // Private field untuk encapsulation
-  #sks = 0;
-
-  constructor(nama, umur, nim, jurusan) {
-    // Wajib panggil constructor parent (Orang)
-    super(nama, umur); 
-    
-    this.nim = nim;
-    this.jurusan = jurusan;
-  }
-
-  // Override method 'perkenalan'
-  perkenalan() {
-    console.log(
-      `Perkenalkan, saya ${this.nama} (NIM: ${this.nim}), ` +
-      `dari jurusan ${this.jurusan}.`
-    );
-  }
-
-  // Method untuk mengubah data private
-  ambilSKS(jumlah) {
-    this.#sks += jumlah;
-    console.log(`${this.nama} mengambil ${jumlah} SKS. Total SKS: ${this.#sks}.`);
-  }
-
-  // Method untuk membaca data private
-  lihatSKS() {
-    console.log(`Total SKS ${this.nama} adalah: ${this.#sks} SKS.`);
-  }
-}
-
-// Demonstrasi
-const dewi = new Mahasiswa("Dewi Lestari", 20, "10339010", "Sistem Informasi");
-
-dewi.sapa(); // Method dari parent (Orang)
-dewi.perkenalan(); // Method dari child (Mahasiswa)
-
-console.log("\n--- Demo Encapsulation SKS ---");
-dewi.ambilSKS(3);
-dewi.ambilSKS(3);
-dewi.ambilSKS(2);
-dewi.lihatSKS();
-
-// Mencoba akses private field (akan error)
-// console.log(dewi.#sks); 
-```
-
-Tentu, ini adalah satu studi kasus tambahan untuk Modul 7, yang berfokus pada **Inheritance (Pewarisan)** dan **Encapsulation (Enkapsulasi)**.
-
------
-
-# **Sistem Inventaris Toko Online**
-
-## **A. Skenario**
+## **Skenario**
 
 Anda ditugaskan untuk membuat sistem manajemen inventaris sederhana. Di toko Anda, ada berbagai jenis produk. Semua produk pasti memiliki **SKU** (Stock Keeping Unit / Kode unik), **Nama Produk**, dan **Harga**.
 
@@ -92,7 +29,7 @@ Namun, ada kategori produk khusus. Misalnya, **Buku** memiliki data tambahan (Pe
 
 Selain itu, **Stok** barang adalah data yang sensitif. Anda tidak ingin stok bisa diubah sembarangan (misalnya, diatur jadi negatif). Stok hanya boleh berkurang jika ada "penjualan" dan bertambah jika ada "pembelian stok baru".
 
-#### **B. Tugas Utama**
+### **Tugas**
 
 Buatlah struktur Class OOP untuk skenario ini:
 
@@ -100,9 +37,8 @@ Buatlah struktur Class OOP untuk skenario ini:
 2.  Buat dua **Child Class** bernama `Book` dan `Electronic` yang mewarisi (`extends`) dari `Product`.
 3.  Terapkan **Encapsulation** pada properti `stok` menggunakan *private field* (`#`).
 
------
 
-#### **C. Spesifikasi Class**
+### **Spesifikasi Class**
 
 **1. `Product` (Parent Class)**
 
