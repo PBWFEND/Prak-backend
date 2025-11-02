@@ -135,7 +135,4 @@ Buatlah struktur Class OOP untuk skenario ini:
   * **Methods (Override):**
       * `displayInfo()`: Menampilkan info `Product` (memanggil `super.displayInfo()`) **DAN** info `warrantyMonths`.
 
-
-> **Tugas ini menguji pemahaman Anda tentang OOP: Pewarisan dan Perlindungan Data.**  
-
-Selamat mengerjakan!
+> Selamat mengerjakan!
