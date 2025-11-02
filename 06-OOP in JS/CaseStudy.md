@@ -1,25 +1,84 @@
-# Studi Kasus 6: Inheritance & Encapsulation
+# **Studi Kasus 6: Inheritance & Encapsulation**
 
-## **1. Inheritance & Encapsulation**
+## **1. Mahasiswa sebagai Pewaris dari Orang**
 
 ## **Skenario**
 
-Kita akan memperluas class `Mahasiswa`. Seorang `Mahasiswa` pada dasarnya adalah `Orang`. Kita akan membuat class `Orang` sebagai *parent*, dan `Mahasiswa` sebagai *child*. Kita juga akan mengenkapsulasi data SKS agar tidak bisa diubah sembarangan.
+Kita akan membangun hierarki kelas menggunakan **inheritance**.  
+Seorang `Mahasiswa` adalah jenis khusus dari `Orang`. Oleh karena itu:
+- Buat class `Orang` sebagai **parent class**.
+- Buat class `Mahasiswa` sebagai **child class** yang mewarisi `Orang`.
+- Terapkan **enkapsulasi** pada data total SKS agar tidak dapat diubah secara langsung dari luar kelas.
+
 
 ### **Tugas**
 
-Buat file `kampus.js`.
+Buat file bernama `kampus.js` dan lengkapi sesuai langkah berikut:
 
-1.  Buat class `Orang` dengan `constructor(nama, umur)` dan method `sapa()`.
-2.  Refactor class `Mahasiswa` agar `extends Orang`.
-3.  Di constructor `Mahasiswa`, panggil `super()` untuk mengirim `nama` dan `umur` ke `Orang`.
-4.  Tambahkan *private field* `#sks = 0` di `Mahasiswa`.
-5.  Buat method `ambilSKS(jumlah)` untuk menambah `#sks` secara aman.
-6.  Buat method `lihatSKS()` untuk menampilkan `#sks`.
-7.  Buat instance-nya dan demonstrasikan.
+1. **Buat class `Orang`**  
+   - Memiliki `constructor(nama, umur)` yang menyimpan `nama` dan `umur` sebagai properti.  
+   - Memiliki method `sapa()` yang mencetak:  
+    
+     ```plaintext
+     Halo, nama saya [nama], umur saya [umur] tahun.
+     ```
+
+2. **Refactor class `Mahasiswa` agar mewarisi `Orang`**  
+   - Gunakan kata kunci `extends Orang`.
+
+3. **Panggil `super()` di constructor `Mahasiswa`**  
+   - Kirim parameter `nama` dan `umur` ke constructor parent (`Orang`).
+
+4. **Tambahkan private field `#sks` di dalam class `Mahasiswa`**  
+   - Inisialisasi dengan nilai `0`.  
+   - Gunakan sintaks `#` untuk menjadikannya **benar-benar privat** (tidak bisa diakses dari luar).
+
+5. **Buat method `ambilSKS(jumlah)`**  
+   - Validasi: `jumlah` harus berupa **angka** dan **tidak negatif**.  
+   - Jika valid, tambahkan `jumlah` ke `#sks`.  
+   - Tampilkan pesan konfirmasi (contoh: "Andi berhasil mengambil 3 SKS. Total: 3").
+
+6. **Buat method `lihatSKS()`**  
+   - Menampilkan total SKS saat ini dalam format:  
+    
+     ```plaintext
+     Total SKS [nama]: [sks]
+     ```
+
+7. **Buat demonstrasi penggunaan di akhir file**  
+   - Buat **1 instance `Orang`** dan panggil `sapa()`.  
+   - Buat **1 instance `Mahasiswa`**, lalu:  
+     - Panggil `sapa()` (pastikan dari parent).  
+     - Panggil `ambilSKS()` beberapa kali (termasuk input valid & tidak valid).  
+     - Panggil `lihatSKS()`.  
+     - *(Opsional)* Coba akses langsung `#sks` dari luar → harus error (untuk membuktikan enkapsulasi).
+
+---
+
+### **Contoh Output yang Diharapkan**
+
+```plaintext
+Halo, nama saya Budi, umur saya 25 tahun.
+
+Halo, nama saya Andi, umur saya 20 tahun.
+Andi berhasil mengambil 3 SKS. Total SKS: 3
+Andi berhasil mengambil 4 SKS. Total SKS: 7
+Total SKS Andi: 7
+Jumlah SKS harus angka positif!
+Jumlah SKS harus angka positif!
+```
 
 
-## **2. Sistem Inventaris Toko Online**
+### **Catatan Penting**
+
+- Gunakan **private field** `#sks` (bukan `_sks` atau `sks`), agar benar-benar terenkapsulasi.
+- Pastikan `super()` dipanggil **sebelum** mengakses `this` di constructor `Mahasiswa`.
+- File harus bisa dijalankan dengan perintah:  
+  ```bash
+  node kampus.js
+  ```
+
+## 2. Sistem Inventaris Toko Online
 
 ## **Skenario**
 
@@ -76,3 +135,7 @@ Buatlah struktur Class OOP untuk skenario ini:
   * **Methods (Override):**
       * `displayInfo()`: Menampilkan info `Product` (memanggil `super.displayInfo()`) **DAN** info `warrantyMonths`.
 
+
+> **Tugas ini menguji pemahaman Anda tentang OOP: Pewarisan dan Perlindungan Data.**  
+
+Selamat mengerjakan!
