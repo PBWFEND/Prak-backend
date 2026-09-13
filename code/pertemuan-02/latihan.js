@@ -2,7 +2,7 @@
  * ============================================================
  * Latihan Individu Pertemuan 2 — ES6+ & Async
  * ============================================================
- * Kerjakan setiap TODO di file ini. Jalankan:
+ * Lengkapi setiap bagian latihan di file ini. Jalankan:
  *   node latihan.js
  *
  * Semua latihan meniru kode backend nyata. Setelah selesai,
@@ -19,26 +19,26 @@ const transaksi = [
 ];
 
 // =========================================================
-// TODO 1 — Destructuring + template literal
+// LATIHAN 1 — Destructuring + template literal
 // Ambil nama dan harga item PERTAMA tanpa transaksi[0].nama
 // Cetak: "Item pertama: Kopi Hitam (Rp15.000)"
 // =========================================================
 
 // =========================================================
-// TODO 2 — map + reduce
+// LATIHAN 2 — map + reduce
 // Hitung subtotal tiap item (harga x jumlah) lalu TOTAL struk
 // Gunakan map → subtotal, reduce → total. Cetak keduanya.
 // =========================================================
 
 // =========================================================
-// TODO 3 — filter + spread
+// LATIHAN 3 — filter + spread
 // Ambil item dengan harga > 10000.
 // Buat array baru berisi NAMA semua item termahal
 // menggunakan spread pada array hasil filter.
 // =========================================================
 
 // =========================================================
-// TODO 4 — Promise + async/await
+// LATIHAN 4 — Promise + async/await
 // Buat fungsi prosesPembayaran(total, delayMs) yang mengembalikan
 // Promise: setelah delayMs → resolve { status: "lunas", total, kembali: total - diskon }
 // Diskon 10% jika total > 100000 (pakai hitungDiskon dari modul-02).
@@ -46,7 +46,7 @@ const transaksi = [
 // =========================================================
 
 // =========================================================
-// TODO 5 — Promise.all
+// LATIHAN 5 — Promise.all
 // Tiga "cabang" mengirim laporan penjualan serentak:
 //   tunda(200, 50), tunda(300, 80), tunda(100, 70)
 // (angka kedua = penjualan). Gunakan Promise.all, jumlahkan hasilnya.
@@ -55,7 +55,7 @@ const transaksi = [
 const tunda = (ms, nilai) => new Promise((resolve) => setTimeout(() => resolve(nilai), ms));
 
 // =========================================================
-// TODO 6 — BONUS: mini formatter struk
+// LATIHAN 6 — BONUS: mini formatter struk
 // Cetak struk rapi memakai map + template literal multi-baris:
 //   1. Kopi Hitam       x2  Rp30.000
 //   2. Roti Bakar       x3  Rp36.000

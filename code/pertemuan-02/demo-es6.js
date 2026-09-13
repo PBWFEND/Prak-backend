@@ -134,7 +134,8 @@ console.log("6. reduce:", totalStok);
 const body = { mahasiswa: { nama: "Ani" } };
 // ?. aman saat property bisa tidak ada (body.null?.nama → undefined, bukan error)
 const namaBody = body.mahasiswa?.nama ?? "Tanpa Nama"; // ?? hanya peduli null/undefined
-const stokDefault = 0 ?? 10; // 0 tetap 0, karena 0 bukan null/undefined
+const stokInput = Number(process.env.STOK ?? 0);
+const stokDefault = stokInput ?? 10; // 0 tetap 0, karena 0 bukan null/undefined
 
 console.log("7. Optional:", { namaBody, stokDefault });
 

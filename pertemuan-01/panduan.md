@@ -1,6 +1,6 @@
 # Panduan Penggunaan
 
-Proyek ini berisi materi dan contoh praktikum **Pemrograman Web Back End** menggunakan JavaScript dan Node.js. Program pada pertemuan awal menggunakan `module bawaan Node.js`, sehingga belum membutuhkan` Express.js` atau `package` tambahan.
+Proyek ini berisi materi dan contoh praktikum **Pemrograman Web Back End** menggunakan JavaScript dan Node.js. Program pada pertemuan awal menggunakan `module bawaan Node.js`, sehingga belum membutuhkan `Express.js` atau package tambahan.
 
 ## Persiapan
 
