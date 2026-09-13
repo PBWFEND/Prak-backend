@@ -1,35 +1,52 @@
-📌 Rencana 16 Pertemuan – Pemrograman Web Backend (NodeJS Backend Development with Express JS)
+# USA-WP2360225 - Pemrograman Web Backend
 
+![Node.js](https://img.shields.io/badge/Node.js-20.x-339933?logo=nodedotjs&logoColor=white)
+![Framework](https://img.shields.io/badge/Framework-Express.js-000000?logo=express&logoColor=white)
+![Semester](https://img.shields.io/badge/Semester-2026%2F2027%20Gasal-blue)
+![Pertemuan](https://img.shields.io/badge/Pertemuan-16%20Minggu-purple)
 
-| Minggu | Materi                                                                                                                        | Capaian Pembelajaran                                                | Metode                      | Tugas/Praktikum                                                  |
-| ------ | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------- | ---------------------------------------------------------------- |
-| 1      | **Pengantar CLI & Git**<br>- Terminal dasar<br>- Git init, commit, push, pull                                                 | Mahasiswa mampu menggunakan CLI & Git untuk version control         | Ceramah, Demo, Praktikum    | Inisialisasi repo Git & push project pertama                     |
-| 2      | **Dasar NodeJS & JavaScript**<br>- Variabel, tipe data, string methods                                                        | Mahasiswa memahami dasar JavaScript modern untuk backend            | Demo, Praktikum             | Program sederhana menampilkan biodata                            |
-| 3      | **Function & Conditional**<br>- Logika backend<br>- Function, if-else, switch                                                 | Mahasiswa mampu menulis logika dasar dengan function & conditional  | Praktikum                   | Program validasi login sederhana                                 |
-| 4      | **Looping & Array**<br>- For, forEach, map, filter<br>- Manipulasi array                                                      | Mahasiswa mampu memanipulasi data array                             | Praktikum                   | Aplikasi daftar mahasiswa dengan array                           |
-| 5      | **Object Literal**<br>- Object properties & methods                                                                           | Mahasiswa mampu membuat dan mengakses object                        | Praktikum                   | Program data user dengan method object                           |
-| 6      | **JavaScript Modern (ES6+)**<br>- let/const, arrow function<br>- Spread & destructuring                                       | Mahasiswa mampu menulis kode modern JS (clean code)                 | Demo, Praktikum             | Refactor kode pertemuan 5 ke ES6+                                |
-| 7      | **OOP in JS**<br>- Class, constructor<br>- Inheritance, encapsulation                                                         | Mahasiswa mampu membangun class & OOP di JS                         | Praktikum                   | Class Mahasiswa dengan metode perkenalan                         |
-| 8      | **Asynchronous JS**<br>- Callback, Promise<br>- Async/await                                                                   | Mahasiswa memahami async programming                                | Praktikum                   | Fetch data dummy dengan async/await                              |
-| 9      | **Database Intro**<br>- Konsep NoSQL/MySQL<br>- CRUD dasar                                                                    | Mahasiswa memahami dasar database untuk backend                     | Ceramah, Demo               | Setup MongoDB & buat CRUD sederhana                              |
-| 10     | **TypeScript Fundamentals**<br>- Static typing<br>- Interfaces, generics                                                      | Mahasiswa memahami TS dasar untuk backend                           | Praktikum                   | Program sederhana dengan TypeScript                              |
-| 11     | **ExpressJS Dasar**<br>- Membuat HTTP server<br>- Routing & middleware                                                        | Mahasiswa mampu membuat server Express                              | Demo, Praktikum             | Server Express + route `/hello`                                  |
-| 12     | **Middleware & API Handling**<br>- Request/response<br>- Custom middleware<br>- Error handler, validation                     | Mahasiswa mampu mengelola middleware & validasi                     | Praktikum                   | Middleware logging & error handler                               |
-| 13     | **Mongoose ODM**<br>- Setup MongoDB<br>- Schema, model<br>- CRUD dasar                                                        | Mahasiswa mampu membuat model data dengan Mongoose                  | Praktikum                   | Model Mahasiswa dengan MongoDB                                   |
-| 14     | **REST API dengan Express + Mongoose**<br>- CRUD lengkap<br>- API design & validation                                         | Mahasiswa mampu membuat REST API CRUD                               | Praktikum                   | REST API Mahasiswa (Create, Read, Update, Delete)                |
-| 15     | **Express + TypeScript**<br>- TS config<br>- Types/interfaces<br>- Type-safe routing                                          | Mahasiswa mampu membuat backend TypeScript                          | Demo, Praktikum             | Setup project Express + TS                                       |
-| 16     | **Auth & Relasi Data + Dokumentasi API**<br>- JWT authentication<br>- Populate & virtuals<br>- Dokumentasi API dengan Postman | Mahasiswa mampu membuat backend aman dengan dokumentasi profesional | Demo, Praktikum, Presentasi | Mini project akhir: API dengan auth, relasi, dokumentasi Postman |
+Mata kuliah **Pemrograman Berbasis Web Back End** menggunakan **JavaScript + Node.js** dengan framework **Express.js** (3 SKS, Semester V, Program Studi Sistem Informasi). Mahasiswa membangun fondasi pemahaman backend — arsitektur client–server, HTTP, REST, dan JSON — dilanjutkan JavaScript modern, Node.js fundamentals, Express.js, database & ORM (Prisma), JWT, security, hingga membangun **RESTful API** lengkap dengan testing, dokumentasi, dan deployment.
 
-# Referensi
+## Daftar Isi
 
-- [Node.js Official Documentation](https://nodejs.org/en/docs/)
-- [Mozilla Developer Network (MDN) JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
-- [Express.js Documentation](https://expressjs.com/en/api.html)
-- [Mongoose Documentation](https://mongoosejs.com/docs/)
-- [Postman Documentation](https://learning.postman.com/docs/)
-- [JSON Web Token (JWT)](https://jwt.io/)
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
-- [TypeScript Playground](https://www.typescriptlang.org/play)
-- [TypeScript Tutorial](https://www.typescripttutorial.net/)
+| No. | Dokumen | Deskripsi |
+| :-: | ------- | --------- |
+| 01 | [Timeline Pertemuan — `Timeline.md`](./Timeline.md) | Rencana 16 pertemuan Pemrograman Web Backend — Semester 2026/2027 Gasal: CPMK, materi, aktivitas, output/asesmen |
+| 02 | [Milestone — `Milestone.md`](./Milestone.md) | Peta fase pembelajaran: Fondasi, API Core, Security & Reliability, Quality & Delivery, hingga UAS |
+| 03 | [Pertemuan 1 — `pertemuan-01/01-Pertemuan-1.md`](./pertemuan-01/01-Pertemuan-1.md) | Orientasi Backend Web, Client–Server, HTTP, REST & JSON — dilengkapi diagram Mermaid, demo server Node.js, CBL API Perpustakaan, kuis, dan Tugas 1 + rubrik |
+| 04 | Kode praktikum Pertemuan 1 — [`code/pertemuan-01/`](./code/pertemuan-01/) | Contoh kode siap jalan: `server.js` (demo HTTP server), `latihan.js` (kerangka TODO terbimbing), `perpustakaan.js` (implementasi referensi CBL) |
+| 05 | Kode praktikum Pertemuan 2 — [`code/pertemuan-02/`](./code/pertemuan-02/) | `demo-es6.js`, `demo-async.js`, `service-buku.js` (CBL), `latihan.js` (TODO terbimbing), `modul-02.js`, `data.txt` |
+
+## Referensi Terkait
+
+### 01-Pertemuan-1.md — Orientasi Backend, Client–Server, HTTP, REST & JSON
+
+- [MDN — An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) — konsep dasar HTTP: request, response, dan siklusnya
+- [MDN — HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) — GET, POST, PUT, PATCH, DELETE, dan sifat *safe*/idempotent
+- [MDN — HTTP Status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) — daftar lengkap status code dan keluarga 1xx–5xx
+- [RESTful API Tutorial](https://restfulapi.net/) — prinsip REST, resource naming, dan desain endpoint
+- [MDN — Working with JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) — sintaks JSON serta `JSON.stringify()` / `JSON.parse()`
+- [Node.js — HTTP module](https://nodejs.org/docs/latest/api/http.html) — dokumentasi resmi `http.createServer()` yang dipakai pada demo
+- [Postman Learning Center](https://learning.postman.com/docs/) — menguji endpoint demo (GET/POST) secara visual
+
+### 02-Pertemuan-2.md — JavaScript Modern untuk Backend
+
+- [MDN — Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) — object/array destructuring, default, dan rename
+- [MDN — Spread syntax (...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) — spread operator dan rest parameter
+- [MDN — Array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) — `map`, `filter`, `find`, `reduce`, dan kawan-kawan
+- [MDN — Optional chaining (?.)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) dan [Nullish coalescing (??)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing) — akses data aman
+- [MDN — Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) — keadaan pending/fulfilled/rejected, `then`/`catch`/`finally`
+- [MDN — async function & await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) — aturan main async/await dan try/catch
+- [Node.js — File system (fs/promises)](https://nodejs.org/docs/latest/api/fs.html) — baca/tulis file berbasis Promise yang dipakai pada demo
+- [javascript.info — Event loop](https://javascript.info/event-loop) — animasi dan penjelasan urutan eksekusi sync/async
+
+### Timeline.md — Materi 16 Pertemuan
+
+- [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) — panduan resmi JavaScript: ES6+, object, async/await (Minggu 2)
+- [Node.js Official Documentation](https://nodejs.org/en/docs/) — runtime, npm, module system, filesystem (Minggu 3)
+- [Express.js Official Documentation](https://expressjs.com/en/api.html) — routing, middleware, request/response (Minggu 4–7)
+- [Prisma ORM Documentation](https://www.prisma.io/docs) — setup, schema, migration, dan Prisma Client (Minggu 6–7)
+- [JSON Web Token (JWT)](https://jwt.io/) — konsep token dan library `jsonwebtoken` (Minggu 9–10)
+- [OWASP API Security Top 10](https://owasp.org/API-Security/) — keamanan API: validation, injection, auth (Minggu 11)
+- [Postman Learning Center](https://learning.postman.com/docs/) — testing & dokumentasi endpoint API (Minggu 13–14)
+- [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standar dokumentasi API / Swagger (Minggu 14)
