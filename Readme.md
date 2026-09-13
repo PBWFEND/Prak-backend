@@ -16,6 +16,8 @@ Mata kuliah **Pemrograman Berbasis Web Back End** menggunakan **JavaScript + Nod
 | 03 | [Pertemuan 1 — `pertemuan-01/01-Pertemuan-1.md`](./pertemuan-01/01-Pertemuan-1.md) | Orientasi Backend Web, Client–Server, HTTP, REST & JSON — dilengkapi diagram Mermaid, demo server Node.js, CBL API Perpustakaan, kuis, dan Tugas 1 + rubrik |
 | 04 | Kode praktikum Pertemuan 1 — [`code/pertemuan-01/`](./code/pertemuan-01/) | Contoh kode siap jalan: `server.js` (demo HTTP server), `latihan.js` (kerangka TODO terbimbing), `perpustakaan.js` (implementasi referensi CBL) |
 | 05 | Kode praktikum Pertemuan 2 — [`code/pertemuan-02/`](./code/pertemuan-02/) | `demo-es6.js`, `demo-async.js`, `service-buku.js` (CBL), `latihan.js` (TODO terbimbing), `modul-02.js`, `data.txt` |
+| 06 | [Pertemuan 3 — `pertemuan-03/03-Pertemuan-3.md`](./pertemuan-03/03-Pertemuan-3.md) | Node.js Fundamentals — runtime, module ESM, npm, filesystem, environment variable, HTTP server, CBL, kuis, dan Tugas 2 |
+| 07 | Kode praktikum Pertemuan 3 — [`code/pertemuan-03/`](./code/pertemuan-03/) | `config.js`, `demo-node.js`, `server.js`, dan `latihan.js` — seluruhnya menggunakan Node.js 20+ tanpa dependency eksternal |
 
 ## Referensi Terkait
 
@@ -39,6 +41,14 @@ Mata kuliah **Pemrograman Berbasis Web Back End** menggunakan **JavaScript + Nod
 - [MDN — async function & await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) — aturan main async/await dan try/catch
 - [Node.js — File system (fs/promises)](https://nodejs.org/docs/latest/api/fs.html) — baca/tulis file berbasis Promise yang dipakai pada demo
 - [javascript.info — Event loop](https://javascript.info/event-loop) — animasi dan penjelasan urutan eksekusi sync/async
+
+### 03-Pertemuan-3.md — Node.js Fundamentals
+
+- [Node.js — Introduction to Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) — runtime JavaScript dan penggunaan Node.js
+- [Node.js — Modules: ECMAScript modules](https://nodejs.org/api/esm.html) — `import`, `export`, dan module ESM
+- [Node.js — File system](https://nodejs.org/api/fs.html) — operasi filesystem dan `node:fs/promises`
+- [Node.js — HTTP](https://nodejs.org/api/http.html) — pembuatan HTTP server dengan module bawaan
+- [npm — package.json](https://docs.npmjs.com/cli/v10/configuring-npm/package-json) — metadata project, script, dan dependency
 
 ### Timeline.md — Materi 16 Pertemuan
 
