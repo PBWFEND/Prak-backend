@@ -1,23 +1,25 @@
 # 🎯 Milestone – Pemrograman Web Backend (16 Pertemuan)
 
-Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK dengan penanda UTS dan UAS. Tanggal target mengikuti jadwal pertemuan terakhir pada setiap fase (estimasi, dapat berubah sesuai jadwal kampus).
+Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK dengan penanda UTS dan UAS. Tanggal target disesuaikan untuk dua kelas, yaitu SI-VA yang mulai pada 14 September 2026 dan SI-VB yang mulai pada 15 September 2026. Estimasi dapat berubah sesuai jadwal kampus.
 
 ## Ringkasan Milestone
 
-| Milestone | Fase | Periode | Target Selesai | CPMK | Deliverable Utama |
-| --------- | ---- | ------- | -------------- | ---- | ----------------- |
-| M1 | Fondasi Backend | Minggu 1–3 | **28 Sep 2026** | CPMK115 | Peta arsitektur backend, latihan JavaScript, HTTP server Node.js |
-| M2 | REST API & Database | Minggu 4–7 | **26 Okt 2026** | CPMK117 | REST endpoint Express.js, schema database, CRUD API terintegrasi |
-| M3 | UTS – Mini Project | Minggu 8 | **02 Nov 2026** | CPMK117 | Mini project backend (REST API + database) + presentasi |
-| M4 | Keamanan & Keandalan | Minggu 9–12 | **30 Nov 2026** | CPMK118 | Register/login, protected API, security checklist, error handler + logger |
-| M5 | Quality & Delivery | Minggu 13–15 | **21 Des 2026** | CPMK118 | Test suite, dokumentasi API, backend siap deploy |
-| M6 | UAS – Final Project | Minggu 16 | **28 Des 2026** | CPMK118 | Final project backend + presentasi |
+| Milestone | Fase | Periode | Kelas | Target Selesai | CPMK | Deliverable Utama |
+| --------- | ---- | ------- | ----- | -------------- | ---- | ----------------- |
+| M1 | Fondasi Backend | Minggu 1–3 | SI-VA / SI-VB | **28 Sep 2026 / 29 Sep 2026** | CPMK115 | Peta arsitektur backend, latihan JavaScript, HTTP server Node.js |
+| M2 | REST API & Database | Minggu 4–7 | SI-VA / SI-VB | **26 Okt 2026 / 27 Okt 2026** | CPMK117 | REST endpoint Express.js, schema database, CRUD API terintegrasi |
+| M3 | UTS – Mini Project | Minggu 8 | SI-VA / SI-VB | **02 Nov 2026 / 03 Nov 2026** | CPMK117 | Mini project backend (REST API + database) + presentasi |
+| M4 | Keamanan & Keandalan | Minggu 9–12 | SI-VA / SI-VB | **30 Nov 2026 / 01 Des 2026** | CPMK118 | Register/login, protected API, security checklist, error handler + logger |
+| M5 | Quality & Delivery | Minggu 13–15 | SI-VA / SI-VB | **21 Des 2026 / 22 Des 2026** | CPMK118 | Test suite, dokumentasi API, backend siap deploy |
+| M6 | UAS – Final Project | Minggu 16 | SI-VA / SI-VB | **28 Des 2026 / 29 Des 2026** | CPMK118 | Final project backend + presentasi |
 
 ---
 
 ## M1 — Fondasi Backend (CPMK115)
 
-**Periode:** 14 Sep – 28 Sep 2026 (Minggu 1–3)
+**Periode:**
+- SI-VA: 14 Sep – 28 Sep 2026 (Minggu 1–3)
+- SI-VB: 15 Sep – 29 Sep 2026 (Minggu 1–3)
 
 **Tujuan:** Mahasiswa mampu memahami arsitektur client–server serta HTTP/REST, menguasai JavaScript modern untuk backend, dan membangun HTTP server sederhana dengan Node.js.
 
@@ -35,7 +37,9 @@ Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK deng
 
 ## M2 — REST API & Database (CPMK117)
 
-**Periode:** 05 Okt – 26 Okt 2026 (Minggu 4–7)
+**Periode:**
+- SI-VA: 05 Okt – 26 Okt 2026 (Minggu 4–7)
+- SI-VB: 06 Okt – 27 Okt 2026 (Minggu 4–7)
 
 **Tujuan:** Mahasiswa mampu membangun REST API dengan Express.js, mengelola database melalui ORM, dan mengimplementasikan CRUD API yang terintegrasi database.
 
@@ -54,7 +58,9 @@ Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK deng
 
 ## M3 — UTS: Mini Project Backend (CPMK117)
 
-**Periode:** 02 Nov 2026 (Minggu 8)
+**Periode:**
+- SI-VA: 02 Nov 2026 (Minggu 8)
+- SI-VB: 03 Nov 2026 (Minggu 8)
 
 **Tujuan:** Mahasiswa mampu mengimplementasikan API inti mini project sebagai bentuk penerapan materi Minggu 1–7.
 
@@ -70,7 +76,9 @@ Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK deng
 
 ## M4 — Keamanan & Keandalan (CPMK118)
 
-**Periode:** 09 Nov – 30 Nov 2026 (Minggu 9–12)
+**Periode:**
+- SI-VA: 09 Nov – 30 Nov 2026 (Minggu 9–12)
+- SI-VB: 10 Nov – 01 Des 2026 (Minggu 9–12)
 
 **Tujuan:** Mahasiswa mampu menerapkan authentication dan authorization, mengamankan API sesuai prinsip OWASP, serta membangun error handling, logging, dan konfigurasi environment yang terpusat.
 
@@ -90,7 +98,9 @@ Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK deng
 
 ## M5 — Quality & Delivery (CPMK118)
 
-**Periode:** 07 Des – 21 Des 2026 (Minggu 13–15)
+**Periode:**
+- SI-VA: 07 Des – 21 Des 2026 (Minggu 13–15)
+- SI-VB: 08 Des – 22 Des 2026 (Minggu 13–15)
 
 **Tujuan:** Mahasiswa mampu menguji API, menyusun dokumentasi, dan menyiapkan backend untuk deployment.
 
@@ -108,7 +118,9 @@ Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK deng
 
 ## M6 — UAS: Demo & Presentasi Final Project (CPMK118)
 
-**Periode:** 28 Des 2026 (Minggu 16)
+**Periode:**
+- SI-VA: 28 Des 2026 (Minggu 16)
+- SI-VB: 29 Des 2026 (Minggu 16)
 
 **Tujuan:** Mahasiswa mampu mendemokan final project backend beserta arsitektur, API, pengujian, dan keamanannya.
 
@@ -125,3 +137,4 @@ Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK deng
 
 - Tanggal target adalah estimasi dan dapat berubah sesuai jadwal yang ditetapkan pihak kampus.
 - Progres tiap deliverable dicentang setelah selesai dan diverifikasi pada pertemuan terkait.
+- Untuk kelas SI-VA dan SI-VB, tanggal pertemuan dimulai pada hari yang berbeda, tetapi materi dan fase pembelajaran tetap mengikuti urutan yang sama.

@@ -51,4 +51,4 @@
 | 16 | 29 Des 2026 | CPMK118 | UAS – Demo & Presentasi Final Project | Demo aplikasi; presentasi arsitektur dan API; pengujian; keamanan; evaluasi hasil project | Final project backend + presentasi | UAS |
 
 
-> **Catatan:** Tanggal di atas adalah estimasi selama proses pembelajaran sesuai dengan kalender akademik. Perubahan jadwal dapat terjadi sewaktu-waktu, dan akan diinformasikan melalui kanal resmi kelas. 
+> **Catatan:** Tanggal kegiatan di bawah adalah estimasi untuk masing-masing kelas sesuai kalender akademik. SI-VA dimulai pada 14 September 2026, sedangkan SI-VB dimulai pada 15 September 2026. Perubahan jadwal dapat terjadi sewaktu-waktu dan akan diinformasikan melalui kanal resmi kelas.
