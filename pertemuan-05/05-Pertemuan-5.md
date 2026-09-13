@@ -6,7 +6,7 @@
 | **Tanggal** | Senin, 12 Oktober 2026 (SI-VA) / Selasa, 13 Oktober 2026 (SI-VB) |
 | **CPMK** | CPMK117 |
 | **Model Pembelajaran** | Case Based Learning / Problem Based Learning |
-| **Stack** | Node.js 20+ dan Express.js 5 |
+| **Stack** | Node.js 20+ dan Express.js 5 (Node.js 24 LTS direkomendasikan) |
 
 > **Catatan penting:** Pertemuan 5 berfokus pada perancangan RESTful API menggunakan Express.js. Anda akan mengubah kebutuhan bisnis menjadi resource, endpoint, method HTTP, query, parameter, validasi input, status code, dan response JSON yang konsisten. Database belum digunakan; data masih disimpan sementara di memory.
 

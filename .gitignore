@@ -179,6 +179,7 @@ $RECYCLE.BIN/
 # Local History for Visual Studio Code
 .history/
 
+# Archive files
 _example_code
 _readme_copy.md
 _arsip
@@ -186,3 +187,4 @@ _uts/
 _02-Pertemuan-2.md
 _normalisasi-gaya-bahasa.md
 AGENTS.md
+RPS_Pemrograman_Berbasis_Web_BackEnd_FINAL_2026.xlsx

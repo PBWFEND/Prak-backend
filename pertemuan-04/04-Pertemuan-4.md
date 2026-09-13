@@ -6,7 +6,7 @@
 | **Tanggal** | Senin, 5 Oktober 2026 (SI-VA) / Selasa, 6 Oktober 2026 (SI-VB) |
 | **CPMK** | CPMK117 |
 | **Model Pembelajaran** | Case Based Learning / Problem Based Learning |
-| **Stack** | Node.js 20+ dan Express.js 5 |
+| **Stack** | Node.js 20+ dan Express.js 5 (Node.js 24 LTS direkomendasikan) |
 
 > **Catatan penting:** Pertemuan 4 memperkenalkan Express.js sebagai framework untuk menyusun HTTP server Node.js dengan routing dan middleware. Anda akan mengubah server `node:http` pada Pertemuan 3 menjadi aplikasi Express yang lebih terstruktur. Database dan autentikasi belum dibahas pada pertemuan ini.
 

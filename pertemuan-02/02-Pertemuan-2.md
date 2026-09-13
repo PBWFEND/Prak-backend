@@ -6,7 +6,7 @@
 | **Tanggal** | Senin, 21 September 2026 (SI-VA) / Selasa, 22 September 2026 (SI-VB) |
 | **CPMK** | CPMK115 |
 | **Model Pembelajaran** | Case Based Learning / Problem Based Learning |
-| **Stack** | JavaScript (Node.js 20+) |
+| **Stack** | JavaScript + Node.js 20+ (Node.js 24 LTS direkomendasikan) |
 
 > **Catatan penting:** Pada Pertemuan 1, mahasiswa mempelajari dasar komunikasi dalam aplikasi web melalui alur **Client → Request → Backend → Response**. Pada Pertemuan 2, mahasiswa mempelajari fitur dan sintaks JavaScript modern yang diperlukan untuk menulis kode backend secara lebih terstruktur. Materi meliputi **ES6+**, seperti `let/const`, arrow function, template literal, destructuring, spread operator, dan module, serta pemrograman asynchronous menggunakan **Promise dan async/await**. Fitur-fitur tersebut akan digunakan kembali pada materi berikutnya, termasuk pengembangan server Node.js, routing dan middleware Express.js, serta pengolahan data dan query database. Oleh karena itu, penguasaan JavaScript modern dan konsep asynchronous programming merupakan dasar penting untuk mengikuti pembelajaran backend pada pertemuan-pertemuan berikutnya.
 
@@ -37,9 +37,9 @@
   - [19. Latihan Individu](#19-latihan-individu)
   - [20. Pemanfaatan AI sebagai Coding Assistant](#20-pemanfaatan-ai-sebagai-coding-assistant)
   - [21. Kuis Formatif + Kunci Jawaban](#21-kuis-formatif--kunci-jawaban)
-  - [22. Output Pembelajaran — Tugas 2](#22-output-pembelajaran--tugas-2)
+  - [22. Output Pembelajaran — Tugas 1](#22-output-pembelajaran--tugas-1)
     - [Cara Pengumpulan — Push ke Repository GitHub Kelas](#cara-pengumpulan--push-ke-repository-github-kelas)
-  - [23. Rubrik Tugas 2](#23-rubrik-tugas-2)
+  - [23. Rubrik Tugas 1](#23-rubrik-tugas-1)
   - [24. Persiapan menuju Pertemuan 3](#24-persiapan-menuju-pertemuan-3)
     - [📎 Lampiran: Kode Praktikum](#-lampiran-kode-praktikum)
 
@@ -583,7 +583,7 @@ Setelah selesai, jalankan `node latihan.js`. Pastikan setiap TODO menghasilkan k
 
 **❌ Jangan gunakan AI untuk:**
 
-- Menghasilkan seluruh Tugas 2 (refactor + demo) tanpa proses pengerjaan dan pemahaman oleh mahasiswa
+- Menghasilkan seluruh Tugas 1 (refactor + demo) tanpa proses pengerjaan dan pemahaman oleh mahasiswa
 - Menyalin solusi latihan tanpa mencoba menyelesaikan permasalahan secara mandiri terlebih dahulu
 
 **Etika di kelas ini:**
@@ -631,11 +631,11 @@ Setelah selesai, jalankan `node latihan.js`. Pastikan setiap TODO menghasilkan k
 
 ---
 
-## 22. Output Pembelajaran — Tugas 2
+## 22. Output Pembelajaran — Tugas 1
 
-**Tugas 2 — Refactor & Mini-Service (Tugas 1 minggu), dikumpulkan sebelum Pertemuan 3.**
+**Tugas 1 — Refactor & Mini-Service (Tugas 1 minggu), diserahkan sebelum Pertemuan 3.**
 
-Tugas 1 berisi rancangan endpoint dalam bentuk dokumen. Tugas 2 bertujuan mengevaluasi kemampuan mahasiswa dalam menerapkan rancangan tersebut ke dalam bentuk logika JavaScript:
+Tugas 1 pada pertemuan ini mengevaluasi kemampuan mahasiswa dalam menerapkan rancangan endpoint dari pertemuan sebelumnya ke dalam bentuk logika JavaScript:
 
 1. **Ambil resource dari Tugas 1 Anda** (perpustakaan / lab / e-warung / absensi).
 2. **Buat file service** (Node.js murni, tanpa Express) berisi "database" in-memory + fungsi async: `findAll`, `findById`, `create`, `update`, `delete` — masing-masing mengembalikan hasil atau `null` untuk "tidak ditemukan". Sertakan simulasi delay (100–300ms).
@@ -647,8 +647,8 @@ Tugas 1 berisi rancangan endpoint dalam bentuk dokumen. Tugas 2 bertujuan mengev
 
 | Kelas | Repository | Folder |
 |:------|:-----------|:-------|
-| SI-VA | `SI-VA-Backend` | `tugas-2/<nim>-<nama>/` |
-| SI-VB | `SI-VB-Backend` | `tugas-2/<nim>-<nama>/` |
+| SI-VA | `SI-VA-Backend` | `tugas-1/<nim>-<nama>/` |
+| SI-VB | `SI-VB-Backend` | `tugas-1/<nim>-<nama>/` |
 
 > Alamat lengkap repo akan dibagikan melalui kanal kelas. Gunakan repository kelas Anda sendiri.
 
@@ -665,11 +665,11 @@ Langkah pengumpulan:
   ```
 3. Buat folder tugas dan simpan berkas tugas ke dalam folder tersebut:
   ```bash
-  mkdir -p tugas-2/<nim>-<nama>
+  mkdir -p tugas-1/<nim>-<nama>
   ```
 4. Pastikan struktur folder minimal sesuai ketentuan tugas:
   ```text
-  tugas-2/<nim>-<nama>/
+  tugas-1/<nim>-<nama>/
   ├── service.js
   ├── refactor.js
   ├── demo.js
@@ -678,8 +678,8 @@ Langkah pengumpulan:
 5. Jalankan `node demo.js` dan pastikan service, refactor, `Promise.all`, serta penanganan error berjalan tanpa error.
 6. Commit perubahan dan push branch NIM ke repository kelas:
   ```bash
-  git add tugas-2/<nim>-<nama>
-  git commit -m "tugas-2: service + refactor ES6 - <nama> <nim>"
+  git add tugas-1/<nim>-<nama>
+  git commit -m "tugas-1: service + refactor ES6 - <nama> <nim>"
   git push -u origin <nim>
   ```
 7. Buka repository di browser, pilih branch NIM Anda, kemudian buat **Pull Request** dari branch NIM menuju branch utama repository kelas. Cantumkan nama, NIM, ringkasan perubahan, dan hasil pengujian pada deskripsi Pull Request.
@@ -689,7 +689,7 @@ Langkah pengumpulan:
 
 ---
 
-## 23. Rubrik Tugas 2
+## 23. Rubrik Tugas 1
 
 | Kriteria | Bobot | 4 (Sangat Baik) | 3 (Baik) | 2 (Cukup) | 1 (Perlu Bimbingan) |
 |:---------|:-----:|:----------------|:---------|:----------|:--------------------|
@@ -709,7 +709,7 @@ Langkah pengumpulan:
 
 **Persiapan:**
 
-- Selesaikan latihan individu + Tugas 2, push sebelum pertemuan.
+- Selesaikan latihan individu + Tugas 1, push sebelum pertemuan.
 - Pastikan Node.js v20+ terpasang (`node --version`) — npm akan mulai dipakai intensif.
 - Baca ulang `demo-async.js`; coba ubah delay pada `Promise.all` dan prediksi total waktunya.
 
