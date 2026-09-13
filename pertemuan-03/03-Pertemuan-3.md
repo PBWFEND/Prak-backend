@@ -6,7 +6,7 @@
 | **Tanggal** | Senin, 28 September 2026 (SI-VA) / Selasa, 29 September 2026 (SI-VB) |
 | **CPMK** | CPMK115 |
 | **Model Pembelajaran** | Case Based Learning / Problem Based Learning |
-| **Stack** | Node.js 20+ tanpa dependency eksternal |
+| **Stack** | Node.js 20+ tanpa dependency eksternal (Node.js 24 LTS direkomendasikan) |
 
 > **Catatan penting:** Pertemuan 3 membahas Node.js sebagai runtime JavaScript untuk backend. Anda akan mempelajari cara menjalankan file JavaScript di luar browser, menggunakan module bawaan, membaca konfigurasi melalui environment variable, mengelola file dengan `node:fs/promises`, dan membuat HTTP server sederhana. Express.js belum digunakan pada pertemuan ini agar mekanisme dasar Node.js dapat dipahami terlebih dahulu.
 

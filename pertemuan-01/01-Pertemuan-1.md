@@ -6,7 +6,7 @@
 | **Tanggal** | Senin, 14 September 2026 (SI-VA) / Selasa, 15 September 2026 (SI-VB) |
 | **CPMK** | CPMK115 |
 | **Model Pembelajaran** | Case Based Learning / Problem Based Learning |
-| **Stack** | JavaScript + Node.js + Express.js |
+| **Stack** | JavaScript + Node.js (module bawaan) |
 
 > **Catatan penting:** Pertemuan 1 sengaja **belum** terlalu masuk Express.js. Kita membangun pemahaman dasar terlebih dahulu tentang alur komunikasi: `Client → HTTP Request → Back End → Data/Logic → HTTP Response → Client`. Setelah fondasi ini kuat, Pertemuan 2 masuk ke JavaScript modern, Pertemuan 3 ke Node.js secara lebih mendalam, dan Pertemuan 4 baru masuk Express.js — sehingga alur 16 pertemuan lebih logis dan OBE-oriented.
 
@@ -597,7 +597,7 @@ Kecerdasan buatan berperan sebagai asisten dalam proses belajar, bukan sebagai p
 
 ## 21. Output Pembelajaran — Tugas 1
 
-**Tugas 1 — Analisis & Desain API** (dikumpulkan sebelum Pertemuan 2).
+**Tugas 1 — Analisis & Desain API** (diserahkan sebelum Pertemuan 2).
 
 Pilih **satu** domain Sistem Informasi: perpustakaan, laboratorium, perpustakaan pribadi, e-warung kampus, atau absensi organisasi. Kerjakan:
 
@@ -609,7 +609,7 @@ Pilih **satu** domain Sistem Informasi: perpustakaan, laboratorium, perpustakaan
 
 ### Cara Pengumpulan — Push ke Repository GitHub Kelas
 
-Tugas dikumpulkan dengan **push ke repository GitHub kelas** (sesuai kelas Anda):
+Tugas diserahkan dengan **push ke repository GitHub kelas** (sesuai kelas Anda):
 
 | Kelas | Repository |
 |:------|:-----------|
