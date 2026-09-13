@@ -644,23 +644,42 @@ Tugas 1 berisi rancangan endpoint dalam bentuk dokumen. Tugas 2 bertujuan mengev
 | SI-VA | `SI-VA-Backend` | `tugas-2/<nim>-<nama>/` |
 | SI-VB | `SI-VB-Backend` | `tugas-2/<nim>-<nama>/` |
 
-```bash
-git add tugas-2/<nim>-<nama>
-git commit -m "tugas-2: service + refactor ES6 - <nama> <nim>"
-git push origin main
-```
+> Alamat lengkap repo akan dibagikan melalui kanal kelas. Gunakan repository kelas Anda sendiri.
 
-Struktur folder tugas:
+Langkah pengumpulan:
 
-```text
-tugas-2/<nim>-<nama>/
-├── service.js      # database in-memory + 5 fungsi async
-├── refactor.js     # versi sebelum & sesudah
-├── demo.js         # menjalankan operasi + Promise.all
-└── refleksi.md     # 3 fitur + 1 kebingungan
-```
+1. *Clone* repository kelas sesuai kelas Anda, lalu masuk ke folder repository:
+  ```bash
+  git clone https://github.com/<org-kelas>/<repo-kelas>.git
+  cd <repo-kelas>
+  ```
+2. Buat branch menggunakan NIM Anda, kemudian pindah ke branch tersebut:
+  ```bash
+  git switch -c <nim>
+  ```
+3. Buat folder tugas dan simpan berkas tugas ke dalam folder tersebut:
+  ```bash
+  mkdir -p tugas-2/<nim>-<nama>
+  ```
+4. Pastikan struktur folder minimal sesuai ketentuan tugas:
+  ```text
+  tugas-2/<nim>-<nama>/
+  ├── service.js
+  ├── refactor.js
+  ├── demo.js
+  └── refleksi.md
+  ```
+5. Jalankan `node demo.js` dan pastikan service, refactor, `Promise.all`, serta penanganan error berjalan tanpa error.
+6. Commit perubahan dan push branch NIM ke repository kelas:
+  ```bash
+  git add tugas-2/<nim>-<nama>
+  git commit -m "tugas-2: service + refactor ES6 - <nama> <nim>"
+  git push -u origin <nim>
+  ```
+7. Buka repository di browser, pilih branch NIM Anda, kemudian buat **Pull Request** dari branch NIM menuju branch utama repository kelas. Cantumkan nama, NIM, ringkasan perubahan, dan hasil pengujian pada deskripsi Pull Request.
+8. Dosen akan memeriksa service, refactor, hasil `Promise.all`, penanganan error, dan kesesuaian dengan rubrik. Tugas yang sesuai akan di-*merge* oleh dosen ke repository kelas.
 
-> Pastikan `node demo.js` berjalan tanpa error di Node 20+ — asisten akan menjalankan langsung.
+> Pastikan `node demo.js` berjalan tanpa error di Node 20+ sebelum membuat Pull Request. Setelah Pull Request dibuat, tunggu pemeriksaan dan merge oleh dosen.
 
 ---
 

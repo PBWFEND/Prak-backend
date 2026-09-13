@@ -609,22 +609,30 @@ Tugas dikumpulkan dengan **push ke repository GitHub kelas** (sesuai kelas Anda)
 
 Langkah pengumpulan:
 
-1. *Clone* repo kelas, lalu buat folder tugas dengan nama `<nim>-<nama>`:
-    ```bash
-    git clone https://github.com/<org-kelas>/SI-VA-Backend.git
-    cd SI-VA-Backend
-    mkdir -p tugas-1/<nim>-<nama>
-    ```
-2. Simpan berkas tugas ke dalam folder tersebut:
-    - `README.md` atau `tugas-1.pdf` — deskripsi sistem, tabel endpoint, contoh JSON, skenario uji (cantumkan Nama + NIM).
+1. *Clone* repository kelas sesuai kelas Anda, lalu masuk ke folder repository:
+  ```bash
+  git clone https://github.com/<org-kelas>/<repo-kelas>.git
+  cd <repo-kelas>
+  ```
+2. Buat branch menggunakan NIM Anda, kemudian pindah ke branch tersebut:
+  ```bash
+  git switch -c <nim>
+  ```
+3. Buat folder tugas dan simpan berkas tugas ke dalam folder tersebut:
+  ```bash
+  mkdir -p tugas-1/<nim>-<nama>
+  ```
+    - `README.md` atau `tugas-1.md` — deskripsi sistem, tabel endpoint, contoh JSON, skenario uji (cantumkan Nama + NIM).
     - `diagram.png` (hasil ekspor) **plus** file sumbernya (`diagram.excalidraw` / `.drawio` / `.mmd`).
-3. Commit dan push:
+4. Commit perubahan dan push branch NIM ke repository kelas:
     ```bash
     git add tugas-1/<nim>-<nama>
     git commit -m "tugas-1: analisis & desain API - <nama> <nim>"
-    git push origin main
+  git push -u origin <nim>
     ```
-4. **Verifikasi** — buka repo di browser dan pastikan berkas tugas Anda sudah tampil sebelum tenggat. Terlambat dihitung dari waktu *push* terakhir.
+5. Buka repository di browser, pilih branch NIM Anda, kemudian buat **Pull Request** dari branch NIM menuju branch utama repository kelas. Cantumkan nama, NIM, ringkasan perubahan, dan hasil pemeriksaan pada deskripsi Pull Request.
+6. Dosen akan memeriksa desain API, diagram, skenario uji, dan kesesuaian dengan rubrik. Tugas yang sesuai akan di-*merge* oleh dosen ke repository kelas.
+7. **Verifikasi** — setelah dosen melakukan merge, buka repository kelas dan pastikan berkas tugas Anda sudah tampil. Keterlambatan dihitung berdasarkan waktu push terakhir ke branch NIM.
 
 ---
 
