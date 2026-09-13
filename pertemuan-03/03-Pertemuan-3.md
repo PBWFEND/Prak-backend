@@ -507,7 +507,13 @@ curl -i http://localhost:3003/tidak-ada
 **Etika di kelas:**
 
 1. Anda wajib dapat menjelaskan setiap module, environment variable, endpoint, dan status code yang diserahkan.
-2. Jika memakai AI, cantumkan pada refleksi atau komentar kode, misalnya: `// Bantuan: GitHub Copilot — penjelasan EADDRINUSE`.
+2. Jika memakai AI, cantumkan pada refleksi atau komentar kode. Contoh yang sesuai dengan materi module dan filesystem:
+
+  ```javascript
+  // Bantuan: GitHub Copilot — penjelasan import.meta.dirname dan readFile
+  const isi = await readFile(path.join(import.meta.dirname, "data.txt"), "utf8");
+  ```
+
 3. AI digunakan sebagai asisten, bukan pengganti. Anda tetap bertanggung jawab memahami, menjalankan, dan menguji kode yang digunakan dalam tugas.
 
 Catat penggunaan AI pada refleksi tugas, termasuk pertanyaan yang diajukan dan bagian yang Anda verifikasi sendiri.

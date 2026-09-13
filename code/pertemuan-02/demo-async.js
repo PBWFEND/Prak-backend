@@ -72,12 +72,15 @@ function ambilBuku(delayMs = 300) {
   });
 }
 
-console.log("3. --- Promise: .then / .catch / .finally ---");
-ambilBuku(200)
-  .then((buku) => console.log("3. then:", buku.length, "buku ditemukan"))
-  .catch((err) => console.log("3. catch:", err.message))
-  .finally(() => console.log("3. finally: selesai (apapun hasilnya)"));
-await jeda(250); // tunggu rantai .then selesai agar log demo berurutan
+console.log("3. --- Promise: top-level await / try / catch / finally ---");
+try {
+  const bukuPromise = await ambilBuku(200);
+  console.log("3. await:", bukuPromise.length, "buku ditemukan");
+} catch (error) {
+  console.log("3. catch:", error.message);
+} finally {
+  console.log("3. finally: selesai (apapun hasilnya)");
+}
 
 // ============================================================
 // 4. async/await — Promise yang ditulis seperti kode sync

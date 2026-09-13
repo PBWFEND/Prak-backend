@@ -588,8 +588,14 @@ Setelah selesai, jalankan `node latihan.js`. Pastikan setiap TODO menghasilkan k
 
 **Etika di kelas ini:**
 
-1. Mahasiswa harus dapat menjelaskan setiap perubahan pada kode refactoring yang dikumpulkan
-2. Cantumkan penggunaan bantuan AI, misalnya: `// Bantuan: ChatGPT — penjelasan Promise.all`
+1. Mahasiswa harus dapat menjelaskan setiap perubahan pada kode refactoring yang diserahkan.
+2. Cantumkan penggunaan bantuan AI pada komentar kode atau refleksi. Contoh yang sesuai dengan materi asynchronous:
+
+  ```javascript
+  // Bantuan: ChatGPT — penjelasan Promise.all untuk menjalankan query secara konkuren
+  const hasil = await Promise.all([ambilBuku(), ambilAnggota()]);
+  ```
+
 3. AI digunakan sebagai alat bantu pembelajaran. Mahasiswa tetap bertanggung jawab memahami, menjelaskan, dan menguji kode yang digunakan dalam tugas. Penggunaan AI tidak menggantikan proses memahami konsep synchronous dan asynchronous programming.
 
 ---

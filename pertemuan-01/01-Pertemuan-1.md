@@ -553,9 +553,20 @@ Kerjakan setelah demo; kode latihan terbimbing ada di [`code/pertemuan-01/latiha
 
 **Etika di kelas ini:**
 
-1. Kamu **wajib bisa menjelaskan** setiap endpoint, method, dan status code yang kamu kumpulkan
-2. Jika memakai AI, **cantumkan** di komentar: `// Bantuan: ChatGPT — penjelasan status code 201`
-3. AI = **asisten**, bukan **pengganti**. Struktur pemahaman dasar mengenai alur  `Client → HTTP Request → Back End → HTTP Response` harus ada di kepala *kamu*, bukan hanya di layar.
+1. **Penjelasan Mandatori**
+Setiap mahasiswa wajib mampu menjelaskan `endpoint`, `method`, serta status code yang digunakan dalam tugas maupun praktik.
+2. Transparansi Penggunaan AI
+Jika menggunakan bantuan AI, cantumkan keterangan eksplisit pada komentar kode. Contoh:
+
+```javascript
+// Dibantu ChatGPT — penjelasan struktur JSON untuk request body POST /mahasiswa
+const contohRequest = {
+  "nim": "F1D022001",
+  "nama": "Jhon Doe"
+};
+```
+3. **AI sebagai Asisten, Bukan Pengganti**
+Kecerdasan buatan berperan sebagai asisten dalam proses belajar, bukan sebagai pengganti. Struktur pemahaman dasar mengenai alur `Client → HTTP Request → Back End → HTTP Response` harus tertanam dalam kerangka berpikir mahasiswa, bukan sekadar ditampilkan di layar.
 
 > 🧠 Analogi: GPS membantumu menemukan rute — tapi kamu tetap harus tahu cara mengemudi dan mengenali jalannya. Saat GPS salah arah, kamu yang harus bisa mengoreksinya.
 

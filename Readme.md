@@ -5,8 +5,6 @@
 ![Semester](https://img.shields.io/badge/Semester-2026%2F2027%20Gasal-blue)
 ![Pertemuan](https://img.shields.io/badge/Pertemuan-16%20Minggu-purple)
 
-Mata kuliah **Pemrograman Berbasis Web Back End** menggunakan **JavaScript + Node.js** dengan framework **Express.js** (3 SKS, Semester V, Program Studi Sistem Informasi). Mahasiswa membangun fondasi pemahaman backend — arsitektur client–server, HTTP, REST, dan JSON — dilanjutkan JavaScript modern, Node.js fundamentals, Express.js, database & ORM (Prisma), JWT, security, hingga membangun **RESTful API** lengkap dengan testing, dokumentasi, dan deployment.
-
 ## Daftar Isi
 
 | No. | Dokumen | Deskripsi |
@@ -18,6 +16,10 @@ Mata kuliah **Pemrograman Berbasis Web Back End** menggunakan **JavaScript + Nod
 | 05 | Kode praktikum Pertemuan 2 — [`code/pertemuan-02/`](./code/pertemuan-02/) | `demo-es6.js`, `demo-async.js`, `service-buku.js` (CBL), `latihan.js` (TODO terbimbing), `modul-02.js`, `data.txt` |
 | 06 | [Pertemuan 3 — `pertemuan-03/03-Pertemuan-3.md`](./pertemuan-03/03-Pertemuan-3.md) | Node.js Fundamentals — runtime, module ESM, npm, filesystem, environment variable, HTTP server, CBL, kuis, dan Tugas 2 |
 | 07 | Kode praktikum Pertemuan 3 — [`code/pertemuan-03/`](./code/pertemuan-03/) | `config.js`, `demo-node.js`, `server.js`, dan `latihan.js` — seluruhnya menggunakan Node.js 20+ tanpa dependency eksternal |
+| 08 | [Pertemuan 4 — `pertemuan-04/04-Pertemuan-4.md`](./pertemuan-04/04-Pertemuan-4.md) | Express.js Dasar — instalasi, struktur app/server, routing, request/response, middleware, parameter, query, 404, error, CBL, kuis, dan Tugas 2 |
+| 09 | Kode praktikum Pertemuan 4 — [`code/pertemuan-04/`](./code/pertemuan-04/) | `package.json`, `app.js`, `server.js`, dan `latihan.js` — Express.js 5 pada Node.js 20+ |
+| 10 | [Pertemuan 5 — `pertemuan-05/05-Pertemuan-5.md`](./pertemuan-05/05-Pertemuan-5.md) | RESTful API dengan Express.js — resource, endpoint, method HTTP, query, parameter, validasi, status code, response JSON, CBL, kuis, dan Tugas 3 |
+| 11 | Kode praktikum Pertemuan 5 — [`code/pertemuan-05/`](./code/pertemuan-05/) | `package.json`, `app.js`, `server.js`, dan `latihan.js` — API resource `buku` dan latihan resource `mahasiswa` |
 
 ## Referensi Terkait
 
@@ -49,6 +51,22 @@ Mata kuliah **Pemrograman Berbasis Web Back End** menggunakan **JavaScript + Nod
 - [Node.js — File system](https://nodejs.org/api/fs.html) — operasi filesystem dan `node:fs/promises`
 - [Node.js — HTTP](https://nodejs.org/api/http.html) — pembuatan HTTP server dengan module bawaan
 - [npm — package.json](https://docs.npmjs.com/cli/v10/configuring-npm/package-json) — metadata project, script, dan dependency
+
+### 04-Pertemuan-4.md — Express.js Dasar
+
+- [Express.js — Installing](https://expressjs.com/en/starter/installing.html) — instalasi Express.js dan pembuatan project
+- [Express.js — Hello World example](https://expressjs.com/en/starter/hello-world.html) — aplikasi dan server Express sederhana
+- [Express.js — Routing](https://expressjs.com/en/guide/routing.html) — method HTTP, route path, parameter, dan handler
+- [Express.js — Using middleware](https://expressjs.com/en/guide/using-middleware.html) — middleware aplikasi, router, dan penanganan error
+- [Express.js — API reference](https://expressjs.com/en/5x/api.html) — referensi `request`, `response`, `app.use`, dan method Express
+
+### 05-Pertemuan-5.md — RESTful API dengan Express.js
+
+- [RESTful API Tutorial](https://restfulapi.net/) — prinsip resource, endpoint, method HTTP, status code, dan desain REST
+- [MDN — HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) — karakteristik `GET`, `POST`, `PUT`, `PATCH`, dan `DELETE`
+- [MDN — HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) — status `2xx`, `4xx`, dan `5xx` pada response API
+- [Express.js — Routing](https://expressjs.com/en/guide/routing.html) — route path, method, parameter, dan handler
+- [Express.js — API reference](https://expressjs.com/en/5x/api.html) — `request.params`, `request.query`, `response.status`, dan `response.json`
 
 ### Timeline.md — Materi 16 Pertemuan
 
