@@ -1,6 +1,6 @@
 # 🎯 Milestone – Pemrograman Web Backend (16 Pertemuan)
 
-Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK dengan penanda UTS dan UAS. Tanggal target disesuaikan untuk dua kelas, yaitu SI-VA yang mulai pada 14 September 2026 dan SI-VB yang mulai pada 15 September 2026. Estimasi dapat berubah sesuai jadwal kampus.
+Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK dengan penanda UTS dan UAS. Tanggal target disesuaikan untuk dua kelas, yaitu SI-VA yang mulai pada 14 September 2026 dan SI-VB yang mulai pada 15 September 2026.Sesuai kalendar akademik.
 
 ## Ringkasan Milestone
 
@@ -135,6 +135,5 @@ Milestone disusun berdasarkan `Timeline.md`, dikelompokkan per capaian CPMK deng
 
 ## Catatan
 
-- Tanggal target adalah estimasi dan dapat berubah sesuai jadwal yang ditetapkan pihak kampus.
 - Progres tiap deliverable dicentang setelah selesai dan diverifikasi pada pertemuan terkait.
 - Untuk kelas SI-VA dan SI-VB, tanggal pertemuan dimulai pada hari yang berbeda, tetapi materi dan fase pembelajaran tetap mengikuti urutan yang sama.
