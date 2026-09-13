@@ -3,7 +3,7 @@
 | | |
 |:--|:--|
 | **Minggu** | 2 |
-| **Tanggal** | Senin, 21 September 2026 |
+| **Tanggal** | Senin, 21 September 2026 (SI-VA) / Selasa, 22 September 2026 (SI-VB) |
 | **CPMK** | CPMK115 |
 | **Model Pembelajaran** | Case Based Learning / Problem Based Learning |
 | **Stack** | JavaScript (Node.js 20+) |
@@ -18,14 +18,14 @@
   - [Daftar Isi](#daftar-isi)
   - [1. Keterkaitan Pertemuan dengan RPS OBE](#1-keterkaitan-pertemuan-dengan-rps-obe)
   - [2. Capaian Pembelajaran Pertemuan](#2-capaian-pembelajaran-pertemuan)
-  - [3. Pemantik Kasus: Log Server yang Berantakan](#3-pemantik-kasus-log-server-yang-berantakan)
+  - [3. Pemantik Kasus: Kode Server yang Perlu Direfactor](#3-pemantik-kasus-kode-server-yang-perlu-direfactor)
   - [4. Review Cepat: let, const, dan Tipe Data](#4-review-cepat-let-const-dan-tipe-data)
   - [5. Function Declaration vs Expression vs Arrow](#5-function-declaration-vs-expression-vs-arrow)
   - [6. Template Literals](#6-template-literals)
   - [7. Destructuring](#7-destructuring)
-  - [8. Spread Operator & Rest Parameter](#8-spread-operator--rest-parameter)
+  - [8. Spread Operator \& Rest Parameter](#8-spread-operator--rest-parameter)
   - [9. Array Methods: map, filter, find, reduce](#9-array-methods-map-filter-find-reduce)
-  - [10. Optional Chaining & Nullish Coalescing](#10-optional-chaining--nullish-coalescing)
+  - [10. Optional Chaining \& Nullish Coalescing](#10-optional-chaining--nullish-coalescing)
   - [11. Module: CommonJS (require) vs ES Modules (import)](#11-module-commonjs-require-vs-es-modules-import)
   - [12. Synchronous vs Asynchronous: Event Loop](#12-synchronous-vs-asynchronous-event-loop)
   - [13. Callback — dan Callback Hell](#13-callback--dan-callback-hell)

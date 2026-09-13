@@ -3,7 +3,7 @@
 | | |
 |:--|:--|
 | **Minggu** | 1 |
-| **Tanggal** | Senin, 14 September 2026 |
+| **Tanggal** | Senin, 14 September 2026 (SI-VA) / Selasa, 15 September 2026 (SI-VB) |
 | **CPMK** | CPMK115 |
 | **Model Pembelajaran** | Case Based Learning / Problem Based Learning |
 | **Stack** | JavaScript + Node.js + Express.js |
