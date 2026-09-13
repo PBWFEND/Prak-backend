@@ -24,6 +24,10 @@
 
 
 
+
+
+----
+
 [![Hari](https://img.shields.io/badge/Hari-Selasa-2ecc71?style=for-the-badge)](https://) [![Jam](https://img.shields.io/badge/Jam-10:00--12:30-0A66C2?style=for-the-badge)](https://) [![Ruang](https://img.shields.io/badge/Ruang-R.LAB.1-ff8c42?style=for-the-badge)](https://) [![SKS](https://img.shields.io/badge/SKS-3%20SKS-8b5cf6?style=for-the-badge)](https://) [![Kelas](https://img.shields.io/badge/Kelas-SI--VB-10b981?style=for-the-badge)](https://)
 
 
@@ -48,5 +52,3 @@
 
 
 > **Catatan:** Tanggal di atas adalah estimasi selama proses pembelajaran sesuai dengan kalender akademik. Perubahan jadwal dapat terjadi sewaktu-waktu, dan akan diinformasikan melalui kanal resmi kelas. 
-
-[![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fexample.com%2Fprak-backend%2Ftimeline)](https://example.com/prak-backend/timeline)
