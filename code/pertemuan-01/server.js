@@ -17,7 +17,7 @@
  * Uji POST (terminal terpisah):
  *   curl -X POST http://localhost:3000/mahasiswa \
  *     -H "Content-Type: application/json" \
- *     -d '{"nim":"F1D022099","nama":"Budi Santoso"}'
+ *     -d '{"nim":"F1D022099","nama":"Jhon Doe"}'
  */
 
 // 1. Import module bawaan Node.js bernama "http"
@@ -27,7 +27,7 @@ const PORT = 3000;
 
 // 2. "Database" sementara — array biasa di memori
 const mahasiswa = [
-  { nim: "F1D022001", nama: "Budi Santoso" },
+  { nim: "F1D022001", nama: "Jhon Doe" },
   { nim: "F1D022002", nama: "Ani Lestari" },
 ];
 
