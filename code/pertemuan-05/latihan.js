@@ -11,7 +11,7 @@ app.disable("x-powered-by");
 app.use(express.json());
 
 const mahasiswa = [
-  { nim: "F1D022001", nama: "Budi Santoso", prodi: "Sistem Informasi", angkatan: 2024 },
+  { nim: "F1D022001", nama: "Jhon Doe", prodi: "Sistem Informasi", angkatan: 2024 },
   { nim: "F1D022002", nama: "Ani Lestari", prodi: "Sistem Informasi", angkatan: 2023 },
 ];
 
