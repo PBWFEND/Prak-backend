@@ -49,6 +49,3 @@
 | 14 | 15 Des 2026 | CPMK118 | API Documentation & Integration | OpenAPI/Swagger; dokumentasi endpoint; request/response schema; integrasi frontend/client | Dokumentasi API dan demo integrasi client | Tugas 3 |
 | 15 | 22 Des 2026 | CPMK118 | Deployment & Finalisasi Project | Build dan deployment; environment production; database production; Git; Docker pengantar; final review | Backend siap deploy + dokumentasi project | Proyek |
 | 16 | 29 Des 2026 | CPMK118 | UAS – Demo & Presentasi Final Project | Demo aplikasi; presentasi arsitektur dan API; pengujian; keamanan; evaluasi hasil project | Final project backend + presentasi | UAS |
-
-
-> **Catatan:** Tanggal kegiatan di bawah adalah estimasi untuk masing-masing kelas sesuai kalender akademik. SI-VA dimulai pada 14 September 2026, sedangkan SI-VB dimulai pada 15 September 2026. Perubahan jadwal dapat terjadi sewaktu-waktu dan akan diinformasikan melalui kanal resmi kelas.
