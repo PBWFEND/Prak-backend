@@ -35,7 +35,7 @@
   - [17. Aktivitas Kelompok](#17-aktivitas-kelompok)
   - [18. Latihan Individu](#18-latihan-individu)
   - [19. Pemanfaatan AI sebagai Coding Assistant](#19-pemanfaatan-ai-sebagai-coding-assistant)
-  - [20. Kuis Formatif + Kunci Jawaban](#20-kuis-formatif--kunci-jawaban)
+  - [20. Kuis Formatif](#20-kuis-formatif)
   - [21. Output Pembelajaran — Tugas 1](#21-output-pembelajaran--tugas-1)
     - [Cara Pengumpulan — Push ke Repository GitHub Kelas](#cara-pengumpulan--push-ke-repository-github-kelas)
   - [22. Rubrik Tugas 1](#22-rubrik-tugas-1)
@@ -572,7 +572,7 @@ Kecerdasan buatan berperan sebagai asisten dalam proses belajar, bukan sebagai p
 
 ---
 
-## 20. Kuis Formatif + Kunci Jawaban
+## 20. Kuis Formatif
 
 **Kuis (10 menit, tutup catatan):**
 
@@ -582,16 +582,7 @@ Kecerdasan buatan berperan sebagai asisten dalam proses belajar, bukan sebagai p
 4. Mengapa `GET /hapusBuku?id=1` dianggap tidak REST?
 5. Apa fungsi `JSON.stringify()` dan `JSON.parse()` di Node.js?
 
-<details>
-<summary><strong>🔑 Kunci Jawaban</strong></summary>
-
-1. **Method, URL/path, headers, body.**
-2. (a) `GET /buku` · (b) `POST /buku` · (c) `PATCH /buku/:id` · (d) `DELETE /buku/:id`.
-3. `201` = Created (resource baru berhasil dibuat); `404` = Not Found (resource tidak ada); `500` = Internal Server Error (kesalahan di sisi server).
-4. Karena aksi (hapus) seharusnya dinyatakan lewat **HTTP method** (`DELETE /buku/1`), bukan lewat kata kerja di URL; selain itu GET harus *safe* (tidak mengubah data).
-5. `JSON.stringify()` mengubah **object JavaScript menjadi string JSON** (menyiapkan body response); `JSON.parse()` mengubah **string JSON menjadi object JavaScript** (membaca body request).
-
-</details>
+Kunci jawaban pengajar tersedia pada berkas lokal [`kunci-jawaban-kuis.md`](./kunci-jawaban-kuis.md) yang tidak dilacak oleh Git.
 
 ---
 

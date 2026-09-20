@@ -33,7 +33,7 @@
   - [15. Aktivitas Kelompok](#15-aktivitas-kelompok)
   - [16. Latihan Individu](#16-latihan-individu)
   - [17. Pemanfaatan AI sebagai Coding Assistant](#17-pemanfaatan-ai-sebagai-coding-assistant)
-  - [18. Kuis Formatif + Kunci Jawaban](#18-kuis-formatif--kunci-jawaban)
+  - [18. Kuis Formatif](#18-kuis-formatif)
   - [19. Output Pembelajaran — Tugas 3](#19-output-pembelajaran--tugas-3)
     - [Cara Pengumpulan — Push ke Repository GitHub Kelas](#cara-pengumpulan--push-ke-repository-github-kelas)
   - [20. Rubrik Tugas 3](#20-rubrik-tugas-3)
@@ -459,7 +459,7 @@ Catat method, URL, status code, dan response JSON pada `README.md` tugas Anda.
 
 ---
 
-## 18. Kuis Formatif + Kunci Jawaban
+## 18. Kuis Formatif
 
 1. Apa yang dimaksud dengan resource dalam RESTful API?
 2. Kapan menggunakan route parameter dan kapan menggunakan query parameter?
@@ -468,17 +468,7 @@ Catat method, URL, status code, dan response JSON pada `README.md` tugas Anda.
 5. Mengapa response JSON perlu memiliki struktur yang konsisten?
 6. Mengapa endpoint sebaiknya menggunakan kata benda, bukan kata kerja?
 
-<details>
-<summary><strong>Kunci Jawaban</strong></summary>
-
-1. Resource adalah objek atau data yang dikelola API, misalnya buku atau mahasiswa, dan direpresentasikan melalui endpoint.
-2. Route parameter digunakan untuk identitas resource tertentu seperti `/buku/1`; query parameter digunakan untuk filter atau opsi seperti `/buku?minStok=1`.
-3. `PUT` mengganti representasi lengkap resource, sedangkan `PATCH` mengubah sebagian field.
-4. Create menggunakan `201`, input tidak valid `400`, resource tidak ditemukan `404`, dan delete tanpa body `204`.
-5. Struktur konsisten memudahkan client membaca `success`, `message`, `data`, dan `details` secara terprediksi.
-6. Method HTTP sudah menyatakan operasi sehingga URL dapat fokus menyatakan resource.
-
-</details>
+Kunci jawaban pengajar tersedia pada berkas lokal [`kunci-jawaban-kuis.md`](./kunci-jawaban-kuis.md) yang tidak dilacak oleh Git.
 
 ---
 

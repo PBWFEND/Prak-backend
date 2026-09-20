@@ -34,7 +34,7 @@
   - [16. Aktivitas Kelompok](#16-aktivitas-kelompok)
   - [17. Latihan Individu](#17-latihan-individu)
   - [18. Pemanfaatan AI sebagai Coding Assistant](#18-pemanfaatan-ai-sebagai-coding-assistant)
-  - [19. Kuis Formatif + Kunci Jawaban](#19-kuis-formatif--kunci-jawaban)
+  - [19. Kuis Formatif](#19-kuis-formatif)
   - [20. Output Pembelajaran — Tugas 2](#20-output-pembelajaran--tugas-2)
     - [Cara Pengumpulan — Push ke Repository GitHub Kelas](#cara-pengumpulan--push-ke-repository-github-kelas)
   - [21. Rubrik Tugas 2](#21-rubrik-tugas-2)
@@ -520,7 +520,7 @@ Catat penggunaan AI pada refleksi tugas, termasuk pertanyaan yang diajukan dan b
 
 ---
 
-## 19. Kuis Formatif + Kunci Jawaban
+## 19. Kuis Formatif
 
 1. Apa perbedaan JavaScript di browser dan JavaScript yang dijalankan Node.js?
 2. Mengapa import module lokal perlu menggunakan `./` dan ekstensi `.js`?
@@ -529,17 +529,7 @@ Catat penggunaan AI pada refleksi tugas, termasuk pertanyaan yang diajukan dan b
 5. Mengapa response HTTP perlu memanggil `response.end()`?
 6. Apa status code yang tepat untuk endpoint yang tidak tersedia?
 
-<details>
-<summary><strong>Kunci Jawaban</strong></summary>
-
-1. Node.js menyediakan runtime dan API server seperti filesystem, process, dan HTTP; browser menyediakan DOM dan API browser.
-2. `./` menandai module lokal relatif terhadap file saat ini, sedangkan ekstensi membantu Node.js menentukan file yang diimpor.
-3. Port dapat diubah sesuai lingkungan tanpa mengedit source code.
-4. `path.join()` menyusun lokasi file dengan separator yang sesuai sistem operasi.
-5. `response.end()` menandai bahwa response selesai dan dikirim kepada client.
-6. Status `404 Not Found`.
-
-</details>
+Kunci jawaban pengajar tersedia pada berkas lokal [`kunci-jawaban-kuis.md`](./kunci-jawaban-kuis.md) yang tidak dilacak oleh Git.
 
 ---
 

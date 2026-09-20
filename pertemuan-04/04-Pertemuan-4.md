@@ -33,7 +33,7 @@
   - [15. Aktivitas Kelompok](#15-aktivitas-kelompok)
   - [16. Latihan Individu](#16-latihan-individu)
   - [17. Pemanfaatan AI sebagai Coding Assistant](#17-pemanfaatan-ai-sebagai-coding-assistant)
-  - [18. Kuis Formatif + Kunci Jawaban](#18-kuis-formatif--kunci-jawaban)
+  - [18. Kuis Formatif](#18-kuis-formatif)
   - [19. Output Pembelajaran — Tugas 2](#19-output-pembelajaran--tugas-2)
     - [Cara Pengumpulan — Push ke Repository GitHub Kelas](#cara-pengumpulan--push-ke-repository-github-kelas)
   - [20. Rubrik Tugas 2](#20-rubrik-tugas-2)
@@ -492,7 +492,7 @@ node latihan.js
 
 ---
 
-## 18. Kuis Formatif + Kunci Jawaban
+## 18. Kuis Formatif
 
 1. Apa perbedaan Node.js dan Express.js?
 2. Apa fungsi `app.use(express.json())`?
@@ -501,17 +501,7 @@ node latihan.js
 5. Di bagian mana handler 404 dan error middleware diletakkan?
 6. Status code apa yang digunakan ketika resource berhasil dibuat?
 
-<details>
-<summary><strong>Kunci Jawaban</strong></summary>
-
-1. Node.js adalah runtime JavaScript, sedangkan Express.js adalah framework web yang berjalan di atas Node.js.
-2. Membaca body request berformat JSON dan menempatkan hasilnya pada `request.body`.
-3. Route parameter mengidentifikasi bagian path seperti `/buku/:id`; query parameter digunakan untuk filter atau opsi seperti `/buku?tersedia=true`.
-4. `next()` meneruskan request ke middleware atau handler berikutnya. Tanpa `next()` atau response, request dapat menunggu.
-5. Handler 404 diletakkan setelah route valid; error middleware diletakkan setelah handler 404 dan memiliki empat parameter.
-6. Status `201 Created`.
-
-</details>
+Kunci jawaban pengajar tersedia pada berkas lokal [`kunci-jawaban-kuis.md`](./kunci-jawaban-kuis.md) yang tidak dilacak oleh Git.
 
 ---
 

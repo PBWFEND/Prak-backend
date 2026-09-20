@@ -118,6 +118,9 @@ dist
 .pnp.*
 
 # General
+
+# Local instructor answer keys
+pertemuan-*/kunci-jawaban*.md
 .DS_Store
 .AppleDouble
 .LSOverride

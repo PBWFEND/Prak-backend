@@ -8,7 +8,7 @@
 | **Model Pembelajaran** | Case Based Learning / Problem Based Learning |
 | **Stack** | JavaScript + Node.js 20+ (Node.js 24 LTS direkomendasikan) |
 
-> **Catatan penting:** Pada Pertemuan 1, mahasiswa mempelajari dasar komunikasi dalam aplikasi web melalui alur **Client → Request → Backend → Response**. Pada Pertemuan 2, mahasiswa mempelajari fitur dan sintaks JavaScript modern yang diperlukan untuk menulis kode backend secara lebih terstruktur. Materi meliputi **ES6+**, seperti `let/const`, arrow function, template literal, destructuring, spread operator, dan module, serta pemrograman asynchronous menggunakan **Promise dan async/await**. Fitur-fitur tersebut akan digunakan kembali pada materi berikutnya, termasuk pengembangan server Node.js, routing dan middleware Express.js, serta pengolahan data dan query database. Oleh karena itu, penguasaan JavaScript modern dan konsep asynchronous programming merupakan dasar penting untuk mengikuti pembelajaran backend pada pertemuan-pertemuan berikutnya.
+> **Catatan penting:** Pada Pertemuan 1, mahasiswa mempelajari dasar komunikasi dalam aplikasi web melalui alur **Client → Request → Backend → Response**. Pada Pertemuan 2, mahasiswa mempelajari fitur dan sintaks JavaScript modern yang diperlukan untuk menulis kode backend secara lebih terstruktur. Materi meliputi **ES6+**, seperti `let/const`, arrow function, template literal, destructuring, spread operator, dan module, serta pemrograman asynchronous menggunakan **Promise dan async/await**. Fitur-fitur tersebut akan digunakan kembali pada materi berikutnya, termasuk pengembangan server Node.js, routing dan middleware Express.js, serta pengolahan data dan kueri database. Oleh karena itu, penguasaan JavaScript modern dan konsep asynchronous programming merupakan dasar penting untuk mengikuti pembelajaran backend pada pertemuan-pertemuan berikutnya.
 
 ---
 
@@ -18,7 +18,7 @@
   - [Daftar Isi](#daftar-isi)
   - [1. Keterkaitan Pertemuan dengan RPS OBE](#1-keterkaitan-pertemuan-dengan-rps-obe)
   - [2. Capaian Pembelajaran Pertemuan](#2-capaian-pembelajaran-pertemuan)
-  - [3. Pemantik Kasus: Kode Server yang Perlu Direfactor](#3-pemantik-kasus-kode-server-yang-perlu-direfactor)
+  - [3. Pemantik Kasus: Kode Server yang Perlu Direstrukturisasi](#3-pemantik-kasus-kode-server-yang-perlu-direstrukturisasi)
   - [4. Review Cepat: let, const, dan Tipe Data](#4-review-cepat-let-const-dan-tipe-data)
   - [5. Function Declaration vs Expression vs Arrow](#5-function-declaration-vs-expression-vs-arrow)
   - [6. Template Literals](#6-template-literals)
@@ -31,12 +31,12 @@
   - [13. Callback — dan Callback Hell](#13-callback--dan-callback-hell)
   - [14. Promise: then, catch, finally](#14-promise-then-catch-finally)
   - [15. async/await + try/catch](#15-asyncawait--trycatch)
-  - [16. Promise.all: Menjalankan Task Secara Paralel](#16-promiseall-menjalankan-task-secara-paralel)
+  - [16. Promise.all: Menjalankan Tugas Secara Paralel](#16-promiseall-menjalankan-tugas-secara-paralel)
   - [17. Case Based Learning: Service Buku Perpustakaan](#17-case-based-learning-service-buku-perpustakaan)
   - [18. Aktivitas Kelompok](#18-aktivitas-kelompok)
   - [19. Latihan Individu](#19-latihan-individu)
   - [20. Pemanfaatan AI sebagai Coding Assistant](#20-pemanfaatan-ai-sebagai-coding-assistant)
-  - [21. Kuis Formatif + Kunci Jawaban](#21-kuis-formatif--kunci-jawaban)
+  - [21. Kuis Formatif](#21-kuis-formatif)
   - [22. Output Pembelajaran — Tugas 1](#22-output-pembelajaran--tugas-1)
     - [Cara Pengumpulan — Push ke Repository GitHub Kelas](#cara-pengumpulan--push-ke-repository-github-kelas)
   - [23. Rubrik Tugas 1](#23-rubrik-tugas-1)
@@ -58,7 +58,7 @@ timeline
     title Posisi Pertemuan 2 dalam Peta 16 Minggu
     section Fondasi (M1-M3)
         Minggu 1 : Memahami HTTP & REST
-        Minggu 2 : JavaScript Modern : ES6+, Promise, async/await (hari ini)
+        Minggu 2 : JavaScript Modern : ES6+, Promise, async/await (pertemuan ini)
         Minggu 3 : Node.js Fundamentals : npm, module, filesystem
     section API Core (M4-M8)
         Minggu 4-5 : Express.js & RESTful API
@@ -82,11 +82,11 @@ Setelah mengikuti pertemuan ini, mahasiswa mampu:
 | 3 | Memilih array method yang tepat | Menjelaskan kapan memakai `map` vs `filter` vs `find` vs `reduce` |
 | 4 | Membedakan sync vs async & menjelaskan event loop | Memprediksi urutan output kode campuran sync/async |
 | 5 | Menulis Promise dan mengonsumsinya dengan async/await | Membungkus operasi lambat menjadi Promise + try/catch |
-| 6 | Menjalankan beberapa async task paralel | Memakai `Promise.all` dan mengukur waktu eksekusinya |
+| 6 | Menjalankan beberapa operasi asynchronous secara paralel | Memakai `Promise.all` dan mengukur waktu eksekusinya |
 
 ---
 
-## 3. Pemantik Kasus: Kode Server yang Perlu Direfactor
+## 3. Pemantik Kasus: Kode Server yang Perlu Direstrukturisasi
 
 Dalam sebuah proyek aplikasi perpustakaan, tim pengembang menemukan kode lama yang masih dapat dijalankan, tetapi memiliki beberapa bagian yang sulit dipelihara. Mahasiswa diminta menganalisis kode tersebut dan mengidentifikasi bagaimana fitur JavaScript modern dapat digunakan untuk meningkatkan keterbacaan dan pemeliharaan kode.
 
@@ -107,9 +107,9 @@ function prosesPeminjaman0(req, res) {
 
 Pertanyaan pemantik:
 
-- Kode di atas **masih dapat dijalankan**. Mengapa kode tersebut perlu direfactor?
+- Kode di atas **masih dapat dijalankan**. Mengapa kode tersebut perlu direstrukturisasi melalui refactoring?
 - `req.body` dapat diterima tanpa field `id`. Apa konsekuensinya jika `cariBuku()` menerima nilai `undefined`?
-- Bagaimana Anda **memastikan** bahwa refactoring tidak mengubah perilaku program? (petunjuk: bandingkan keluaran sebelum dan sesudah; konsep pengujian akan dipelajari lebih lanjut pada Minggu 13.)
+- Bagaimana Anda **memastikan** bahwa refactoring tidak mengubah perilaku program? (Petunjuk: bandingkan keluaran sebelum dan sesudah. Konsep pengujian akan dipelajari lebih lanjut pada Minggu 13.)
 - Server mengalami penundaan respons ketika melakukan pemeriksaan stok. Jika operasi database membutuhkan waktu dan JavaScript diproses pada satu thread, apa konsekuensinya terhadap request lain yang masuk?
 
 Pertemuan ini membahas bagaimana fitur ES6+ dapat meningkatkan keterbacaan dan struktur kode, serta bagaimana Promise dan async/await digunakan untuk menangani operasi asynchronous pada aplikasi backend.
@@ -118,21 +118,21 @@ Pertemuan ini membahas bagaimana fitur ES6+ dapat meningkatkan keterbacaan dan s
 
 ## 4. Review Cepat: let, const, dan Tipe Data
 
-Pemilihan deklarasi variabel pada JavaScript modern bergantung pada apakah nilai variabel perlu di-assign ulang:
+Pemilihan deklarasi variabel pada JavaScript modern bergantung pada apakah nilai variabel perlu ditetapkan ulang:
 
 | Keyword | Scope | Re-assign | Kapan dipakai |
 |:--------|:------|:---------:|:--------------|
 | `const` | block | ❌ | **Default** — 90% kode backend Anda |
 | `let`   | block | ✅ | Hanya nilai yang memang berubah (counter, akumulator) |
-| `var`   | function | ✅ | **Jangan** — hoisting & scope-nya sumber bug klasik |
+| `var`   | function | ✅ | Sebaiknya dihindari — hoisting dan scope-nya dapat menjadi sumber error |
 
 ```javascript
 const PORT = 3000;      // konfigurasi = const
 let totalRequest = 0;   // penghitung = let
-// var hilang dari semua kode kita mulai hari ini
+// var tidak digunakan dalam contoh kode mulai pertemuan ini
 ```
 
-> **Pedoman penggunaan:** gunakan `const` apabila variabel tidak perlu di-assign ulang. Gunakan `let` apabila nilai variabel perlu diubah selama eksekusi program. Pendekatan ini membantu mengurangi perubahan nilai variabel yang tidak diperlukan.
+> **Pedoman penggunaan:** gunakan `const` apabila variabel tidak perlu ditetapkan ulang. Gunakan `let` apabila nilai variabel perlu diubah selama eksekusi program. Pendekatan ini membantu mengurangi perubahan nilai variabel yang tidak diperlukan.
 
 Tipe data yang dipakai terus-menerus di backend: `String`, `Number`, `Boolean`, `null`, `undefined`, `Object`, `Array` — semuanya sudah muncul di JSON Pertemuan 1 (section 13).
 
@@ -200,7 +200,7 @@ const log = (method, url, status) => `${method} ${url} → ${status}`;
 console.log(`Selamat datang, ${nama} (${nim})`);
 ```
 
-Fitur tambahan: **multi-baris** tanpa `\n`, dan ekspresi di dalam `${}` boleh pemanggilan fungsi, ternary, bahkan template literal lain — persis `console.log` server demo P1:
+Fitur tambahan: **multi-baris** tanpa `\n`. Ekspresi di dalam `${}` dapat berupa pemanggilan fungsi, ternary, atau template literal lain, sebagaimana digunakan pada `console.log` server demo P1:
 
 ```javascript
 console.log(`[${new Date().toLocaleTimeString()}] ${method} ${url}`);
@@ -218,7 +218,7 @@ const buku = { judul: "Belajar Node.js", tahun: 2024 };
 const { judul, penulis = "Anonim", tahun: tahunTerbit } = buku;
 // judul = "Belajar Node.js", penulis = "Anonim", tahunTerbit = 2024
 
-// MUNCUL DI PERTEMUAN 1 — sekarang resmi dibedah:
+// Pola ini telah digunakan pada Pertemuan 1 dan dibahas lebih lanjut di sini:
 const { method, url } = req;               // server.js
 const { nim, nama } = body || {};          // latihan.js
 
@@ -259,7 +259,7 @@ Mengapa penting untuk backend:
 
 1. **Immutability ringan** — `{ ...lama, stok: 4 }` membuat object baru tanpa mengubah aslinya; memudahkan pelacakan perubahan data (penting saat state React / cache).
 2. **Merge konfigurasi** — menggabungkan *default config* dengan *user config* (`{ ...default, ...env }`) — pola yang dipakai di konfigurasi environment (Minggu 12).
-3. `Object.assign(found, data)` di P1 adalah saudara dari spread — keduanya partial update.
+3. `Object.assign(found, data)` di P1 berkaitan dengan spread — keduanya dapat digunakan untuk partial update.
 
 ---
 
@@ -312,7 +312,7 @@ Dua fitur untuk menangani data yang mungkin tidak memiliki properti tertentu:
 ```javascript
 const body = { mahasiswa: { nama: "Ani" } };
 
-// ?. → berhenti aman saat property tidak ada (hasil undefined, BUKAN error)
+// ?. → mengakses property secara aman saat property tidak ada (hasil undefined, bukan error)
 const nama = body.mahasiswa?.nama;       // "Ani"
 const kosong = body.dosen?.nama;         // undefined — tidak error
 
@@ -321,7 +321,7 @@ const penulis = body.penulis ?? "Anonim";
 
 // BEDAKAN dengan || : || menganggap 0, "", false sebagai "kosong"
 const stok = 0;
-const pakaiAtau = stok || 10;    // 10  ← salah: stok 0 dianggap kosong oleh ||
+const pakaiAtau = stok || 10;    // 10  ← catatan: stok 0 dianggap kosong oleh ||
 const pakaiNullish = stok ?? 10; // 0  ← benar: ?? hanya null/undefined
 ```
 
@@ -338,7 +338,7 @@ const tahun = body?.tahun ?? new Date().getFullYear();
 
 ## 11. Module: CommonJS (require) vs ES Modules (import)
 
-Satu file = satu module. Ini cara memecah aplikasi backend agar tidak jadi satu file raksasa:
+Satu file = satu module. Pembagian module membantu mencegah seluruh aplikasi backend berada dalam satu file yang terlalu besar:
 
 ```javascript
 // modul-02.js — mengekspor (mengirim keluar)
@@ -432,7 +432,7 @@ Callback masih digunakan pada dua bagian kode yang telah dipelajari, yaitu callb
 function ambilBuku(delayMs = 300) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const sukses = true; // bayangkan: hasil query database
+      const sukses = true; // simulasi hasil kueri database
       if (sukses) resolve([{ id: 1, judul: "Belajar Node.js" }]);
       else reject(new Error("Database tidak merespons"));
     }, delayMs);
@@ -442,7 +442,7 @@ function ambilBuku(delayMs = 300) {
 ambilBuku()
   .then((buku) => console.log("sukses:", buku))
   .catch((err) => console.log("gagal:", err.message))
-  .finally(() => console.log("selesai — dijalankan apapun hasilnya"));
+  .finally(() => console.log("selesai — dijalankan apa pun hasilnya"));
 ```
 
 Sudah pernah Anda lihat: `readBody()` di P1 **adalah** Promise buatan sendiri — `req.on("end")` memanggil `resolve()`. `Promise.reject` → rantai lompat ke `.catch` terdekat.
@@ -477,7 +477,7 @@ Ketentuan penggunaan:
 
 ---
 
-## 16. Promise.all: Menjalankan Task Secara Paralel
+## 16. Promise.all: Menjalankan Tugas Secara Paralel
 
 Jika operasi asynchronous dijalankan secara berurutan, waktu eksekusinya dapat terakumulasi. Untuk operasi yang **saling independen**, operasi dapat dijalankan secara konkuren menggunakan `Promise.all()`:
 
@@ -487,9 +487,9 @@ const tunda = (ms, nilai) =>
 
 const mulai = Date.now();
 const [buku, anggota, peminjaman] = await Promise.all([
-  tunda(300, "data buku"),      // query 1
-  tunda(200, "data anggota"),   // query 2
-  tunda(100, "data peminjaman"),// query 3
+  tunda(300, "data buku"),      // kueri 1
+  tunda(200, "data anggota"),   // kueri 2
+  tunda(100, "data peminjaman"),// kueri 3
 ]);
 console.log(Date.now() - mulai); // ±300ms (yang terlama), BUKAN 600ms
 ```
@@ -498,24 +498,24 @@ console.log(Date.now() - mulai); // ±300ms (yang terlama), BUKAN 600ms
 gantt
     title Sekuensial (600ms) vs Paralel (300ms)
     section Sekuensial
-        Query 300ms :0, 300
-        Query 200ms :300, 200
-        Query 100ms :500, 100
+        Kueri 300ms :0, 300
+        Kueri 200ms :300, 200
+        Kueri 100ms :500, 100
     section Paralel (Promise.all)
-        Query 300ms :0, 300
-        Query 200ms :0, 200
-        Query 100ms :0, 100
+        Kueri 300ms :0, 300
+        Kueri 200ms :0, 200
+        Kueri 100ms :0, 100
 ```
 
-**Ketentuan:** jika satu Promise dalam `Promise.all()` mengalami rejection, keseluruhan `Promise.all()` akan mengalami rejection. Jika setiap hasil operasi perlu diproses secara terpisah, termasuk hasil yang berhasil maupun gagal, dapat digunakan `Promise.allSettled()`; fitur tersebut berada di luar target pembelajaran pertemuan ini.
+**Ketentuan:** jika satu Promise dalam `Promise.all()` mengalami rejection, keseluruhan `Promise.all()` akan mengalami rejection. Jika setiap hasil operasi perlu diproses secara terpisah, termasuk hasil yang berhasil maupun gagal, dapat digunakan `Promise.allSettled()`; fitur tersebut berada di luar cakupan pembelajaran pertemuan ini.
 
-**Contoh penggunaan:** dashboard atau statistik yang menggabungkan data dari beberapa resource, proses preload, dan agregasi query Prisma (Minggu 7).
+**Contoh penggunaan:** dashboard atau statistik yang menggabungkan data dari beberapa resource, proses preload, dan agregasi kueri Prisma (Minggu 7).
 
 ---
 
 ## 17. Case Based Learning: Service Buku Perpustakaan
 
-**Skenario:** Melanjutkan API Perpustakaan pada Pertemuan 1. Sebelum menggunakan Express.js, logika bisnis dipisahkan dari mekanisme HTTP melalui lapisan *service*. Endpoint pada Pertemuan 1 (`/buku/:id`, `PATCH` stok) ditulis ulang sebagai fungsi-fungsi murni dengan simulasi query database yang memiliki waktu tunda.
+**Skenario:** Melanjutkan API Perpustakaan pada Pertemuan 1. Sebelum menggunakan Express.js, logika bisnis dipisahkan dari mekanisme HTTP melalui lapisan *service*. Endpoint pada Pertemuan 1 (`/buku/:id`, `PATCH` stok) ditulis ulang sebagai fungsi-fungsi murni dengan simulasi kueri database yang memiliki waktu tunda.
 
 ```mermaid
 flowchart LR
@@ -523,7 +523,7 @@ flowchart LR
     S --> D[("Database<br>(simulasi delay)")]
 ```
 
-Kode referensi: [`code/pertemuan-02/service-buku.js`](./code/pertemuan-02/service-buku.js) — memakai seluruh materi hari ini: destructuring parameter di `create({ judul, penulis, tahun, stok = 0 })`, `?? null` di `findById`, spread-style update di `Object.assign`, `Promise.all` untuk statistik, dan `async/await` di setiap akses data.
+Kode referensi: [`code/pertemuan-02/service-buku.js`](./code/pertemuan-02/service-buku.js) — menerapkan materi pada pertemuan ini: destructuring parameter di `create({ judul, penulis, tahun, stok = 0 })`, `?? null` di `findById`, partial update dengan `Object.assign`, `Promise.all` untuk statistik, dan `async/await` pada setiap akses data.
 
 Sistem yang tersedia untuk diuji:
 
@@ -551,7 +551,7 @@ Bentuk kelompok 3–4 orang:
 
    Tulis ulang menggunakan arrow function, template literal, destructuring, dan default value. Setiap perubahan harus dapat dijelaskan berdasarkan alasan teknis dan manfaatnya terhadap keterbacaan atau pemeliharaan kode.
 2. **Prediksi output (10 menit)** — Dosen menayangkan potongan kode campuran sync/async; tiap kelompok menuliskan urutan output **tanpa menjalankan**. Setelahnya jalankan — skor prediksi dibandingkan antar kelompok.
-3. **Paralel vs sekuensial (15 menit)** — Berikan 3 "query" ber-delay berbeda; tiap kelompok menghitung estimasi waktu sekuensial vs `Promise.all` pada berbagai kombinasi, lalu diverifikasi dengan `Date.now()`.
+3. **Paralel vs sekuensial (15 menit)** — Berikan tiga kueri dengan waktu tunda yang berbeda. Setiap kelompok menghitung estimasi waktu sekuensial dan waktu dengan `Promise.all()` pada berbagai kombinasi, kemudian memverifikasi hasilnya dengan `Date.now()`.
 
 **Tujuan aktivitas:** setiap kelompok mampu menjelaskan kapan suatu fitur JavaScript digunakan dan memberikan alasan teknis atas pemilihannya.
 
@@ -566,7 +566,7 @@ Kerjakan setelah demo; kerangka TODO terbimbing ada di [`code/pertemuan-02/latih
 3. **TODO 3** — `filter` + spread: array nama item dengan harga > 10000.
 4. **TODO 4** — Promise + async/await: `prosesPembayaran(total, delayMs)` → resolve `{ status: "lunas", total, kembali }`; diskon 10% jika total > 100000 (pakai `hitungDiskon`).
 5. **TODO 5** — `Promise.all`: 3 laporan cabang (delay 200/300/100ms, nilai 50/80/70) dijumlahkan; buktikan paralel dengan `Date.now()`.
-6. **TODO 6 (bonus)** — cetak struk rapi multi-baris memakai map + `padEnd(20)` + template literal.
+6. **TODO 6 (opsional)** — cetak struk rapi dalam beberapa baris menggunakan `map`, `padEnd(20)`, dan template literal.
 
 Setelah selesai, jalankan `node latihan.js`. Pastikan setiap TODO menghasilkan keluaran yang sesuai dengan spesifikasi latihan sebagai persiapan mengikuti materi Node.js Fundamentals.
 
@@ -581,7 +581,7 @@ Setelah selesai, jalankan `node latihan.js`. Pastikan setiap TODO menghasilkan k
 - Men-review refactor Anda: "mana yang lebih mudah dibaca, arrow atau function biasa?"
 - Membuat soal prediksi output synchronous/asynchronous untuk latihan mandiri
 
-**❌ Jangan gunakan AI untuk:**
+**❌ Hindari penggunaan AI untuk:**
 
 - Menghasilkan seluruh Tugas 1 (refactor + demo) tanpa proses pengerjaan dan pemahaman oleh mahasiswa
 - Menyalin solusi latihan tanpa mencoba menyelesaikan permasalahan secara mandiri terlebih dahulu
@@ -592,7 +592,7 @@ Setelah selesai, jalankan `node latihan.js`. Pastikan setiap TODO menghasilkan k
 2. Cantumkan penggunaan bantuan AI pada komentar kode atau refleksi. Contoh yang sesuai dengan materi asynchronous:
 
   ```javascript
-  // Bantuan: ChatGPT — penjelasan Promise.all untuk menjalankan query secara konkuren
+  // Bantuan: ChatGPT — penjelasan Promise.all untuk menjalankan kueri secara konkuren
   const hasil = await Promise.all([ambilBuku(), ambilAnggota()]);
   ```
 
@@ -600,7 +600,7 @@ Setelah selesai, jalankan `node latihan.js`. Pastikan setiap TODO menghasilkan k
 
 ---
 
-## 21. Kuis Formatif + Kunci Jawaban
+## 21. Kuis Formatif
 
 **Kuis formatif (10 menit, tanpa menggunakan catatan):**
 
@@ -616,18 +616,9 @@ Setelah selesai, jalankan `node latihan.js`. Pastikan setiap TODO menghasilkan k
    ```
 
 4. Apa yang dikembalikan `async` function? Apa fungsi `try/catch` di sana?
-5. Tiga query independen masing-masing 100ms. Berapa total waktu berurutan vs `Promise.all`, dan kapan sebaiknya TIDAK memakai `Promise.all`?
+5. Tiga kueri independen masing-masing membutuhkan waktu 100 ms. Berapa total waktu secara berurutan dan dengan `Promise.all()`? Kapan sebaiknya `Promise.all()` tidak digunakan?
 
-<details>
-<summary><strong>🔑 Kunci Jawaban</strong></summary>
-
-1. `const` mencegah re-assign tak sengaja → kode lebih mudah dilacak; `let` hanya saat nilainya memang berubah (counter, akumulator).
-2. `map` = transformasi tiap elemen → array baru (mis. daftar judul dari daftar buku); `filter` = saring kondisi (mis. buku stok > 0); `find` = ambil satu item pertama yang cocok (mis. detail buku by id).
-3. **A → D → C → B.** Sync dulu (A, D); microtask (C) dieksekusi sebelum macrotask/timer (B) walau delay-nya 0.
-4. Selalu mengembalikan **Promise** (nilai return dibungkus). `try/catch` menangkap error dari `await` — padanan `.catch()` agar handler dapat mengirim status 500, bukan menghentikan server.
-5. Berurutan: ±300ms; `Promise.all`: ±100ms (yang terlama). Jangan dipakai jika task **saling bergantung** (butuh hasil sebelumnya) atau gagal satu = gagal semua tidak diinginkan.
-
-</details>
+Kunci jawaban pengajar tersedia pada berkas lokal [`kunci-jawaban-kuis.md`](./kunci-jawaban-kuis.md) yang tidak dilacak oleh Git.
 
 ---
 
@@ -637,10 +628,10 @@ Setelah selesai, jalankan `node latihan.js`. Pastikan setiap TODO menghasilkan k
 
 Tugas 1 pada pertemuan ini mengevaluasi kemampuan mahasiswa dalam menerapkan rancangan endpoint dari pertemuan sebelumnya ke dalam bentuk logika JavaScript:
 
-1. **Ambil resource dari Tugas 1 Anda** (perpustakaan / lab / e-warung / absensi).
-2. **Buat file service** (Node.js murni, tanpa Express) berisi "database" in-memory + fungsi async: `findAll`, `findById`, `create`, `update`, `delete` — masing-masing mengembalikan hasil atau `null` untuk "tidak ditemukan". Sertakan simulasi delay (100–300ms).
+1. **Pilih resource dari Tugas 1 Anda** (perpustakaan, laboratorium, e-warung, atau absensi).
+2. **Buat file service** (Node.js murni, tanpa Express) berisi database in-memory dan fungsi async: `findAll`, `findById`, `create`, `update`, `delete` — masing-masing mengembalikan hasil atau `null` apabila data tidak ditemukan. Sertakan simulasi waktu tunda 100–300 ms.
 3. **Refactor kode warisan** (dibagikan di kelas) memakai minimal: arrow function, template literal, destructuring, satu array method (`map`/`filter`/`reduce`), dan satu default value. Lampirkan **versi sebelum & sesudah**.
-4. **Demo script** (`demo.js`) yang menjalankan minimal 4 operasi service + satu `Promise.all` berisi 2 query paralel, lengkap dengan `try/catch` untuk kasus id tidak ditemukan.
+4. **Demo script** (`demo.js`) yang menjalankan minimal empat operasi service dan satu `Promise.all()` yang berisi dua kueri paralel. Sertakan `try/catch` untuk menangani kasus id tidak ditemukan.
 5. **Refleksi** (maks. 1 halaman): tiga fitur P2 yang paling mengubah cara Anda menulis kode, dan satu hal yang masih membingungkan.
 
 ### Cara Pengumpulan — Push ke Repository GitHub Kelas
@@ -715,9 +706,9 @@ Langkah pengumpulan:
 
 ```mermaid
 timeline
-    title Roadmap Menuju Express.js
+    title Peta Perkembangan Menuju Express.js
     Minggu 1 : Memahami HTTP & REST : Server Node.js murni
-    Minggu 2 : JavaScript Modern : ES6+, Promise, async/await (hari ini)
+    Minggu 2 : JavaScript Modern : ES6+, Promise, async/await (pertemuan ini)
     Minggu 3 : Node.js Fundamentals : npm, module, filesystem
     Minggu 4 : Express.js Dasar : routing & middleware
 ```
@@ -728,8 +719,8 @@ timeline
 
 | File | Keterangan |
 |:-----|:-----------|
-| [`code/pertemuan-02/demo-es6.js`](./code/pertemuan-02/demo-es6.js) | Demo live: let/const, arrow, template literal, destructuring, spread, array methods, optional chaining, module |
-| [`code/pertemuan-02/demo-async.js`](./code/pertemuan-02/demo-async.js) | Demo live: sync vs async, callback→Promise, then/catch/finally, async/await, Promise.all, fs/promises |
+| [`code/pertemuan-02/demo-es6.js`](./code/pertemuan-02/demo-es6.js) | Demo langsung: let/const, arrow, template literal, destructuring, spread, array methods, optional chaining, module |
+| [`code/pertemuan-02/demo-async.js`](./code/pertemuan-02/demo-async.js) | Demo langsung: sync vs async, callback→Promise, then/catch/finally, async/await, Promise.all, fs/promises |
 | [`code/pertemuan-02/service-buku.js`](./code/pertemuan-02/service-buku.js) | Implementasi referensi CBL: service layer API Perpustakaan |
 | [`code/pertemuan-02/latihan.js`](./code/pertemuan-02/latihan.js) | Kerangka latihan individu dengan TODO terbimbing (kasus e-warung) |
 | [`code/pertemuan-02/modul-02.js`](./code/pertemuan-02/modul-02.js) | Contoh module: formatRupiah & hitungDiskon |
