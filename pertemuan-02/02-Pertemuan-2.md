@@ -18,7 +18,7 @@
   - [Daftar Isi](#daftar-isi)
   - [1. Keterkaitan Pertemuan dengan RPS OBE](#1-keterkaitan-pertemuan-dengan-rps-obe)
   - [2. Capaian Pembelajaran Pertemuan](#2-capaian-pembelajaran-pertemuan)
-  - [3. Pemantik Kasus: Kode Server yang Perlu Direstrukturisasi](#3-pemantik-kasus-kode-server-yang-perlu-direstrukturisasi)
+  - [3. Pemantik Kasus: Identifikasi _Code Smell_ dan Refaktorisasi Kode Sisi Server](#3-pemantik-kasus-identifikasi-code-smell-dan-refaktorisasi-kode-sisi-server)
   - [4. Review Cepat: let, const, dan Tipe Data](#4-review-cepat-let-const-dan-tipe-data)
   - [5. Function Declaration vs Expression vs Arrow](#5-function-declaration-vs-expression-vs-arrow)
   - [6. Template Literals](#6-template-literals)
@@ -86,7 +86,7 @@ Setelah mengikuti pertemuan ini, mahasiswa mampu:
 
 ---
 
-## 3. Pemantik Kasus: Kode Server yang Perlu Direstrukturisasi
+## 3. Pemantik Kasus: Identifikasi _Code Smell_ dan Refaktorisasi Kode Sisi Server
 
 Dalam sebuah proyek aplikasi perpustakaan, tim pengembang menemukan kode lama yang masih dapat dijalankan, tetapi memiliki beberapa bagian yang sulit dipelihara. Mahasiswa diminta menganalisis kode tersebut dan mengidentifikasi bagaimana fitur JavaScript modern dapat digunakan untuk meningkatkan keterbacaan dan pemeliharaan kode.
 
@@ -112,7 +112,7 @@ Pertanyaan pemantik:
 - Bagaimana Anda **memastikan** bahwa refactoring tidak mengubah perilaku program? (Petunjuk: bandingkan keluaran sebelum dan sesudah. Konsep pengujian akan dipelajari lebih lanjut pada Minggu 13.)
 - Server mengalami penundaan respons ketika melakukan pemeriksaan stok. Jika operasi database membutuhkan waktu dan JavaScript diproses pada satu thread, apa konsekuensinya terhadap request lain yang masuk?
 
-Pertemuan ini membahas bagaimana fitur ES6+ dapat meningkatkan keterbacaan dan struktur kode, serta bagaimana Promise dan async/await digunakan untuk menangani operasi asynchronous pada aplikasi backend.
+Pertemuan ini membahas bagaimana fitur `ES6+` dapat meningkatkan keterbacaan dan struktur kode, serta bagaimana `Promise` dan `async/await` digunakan untuk menangani operasi asynchronous pada aplikasi backend.
 
 ---
 
