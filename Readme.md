@@ -20,6 +20,8 @@
 | 09 | Kode praktikum Pertemuan 4 — [`code/pertemuan-04/`](./code/pertemuan-04/) | `package.json`, `app.js`, `server.js`, dan `latihan.js` — Express.js 5 pada Node.js 20+ |
 | 10 | [Pertemuan 5 — `pertemuan-05/05-Pertemuan-5.md`](./pertemuan-05/05-Pertemuan-5.md) | RESTful API dengan Express.js — resource, endpoint, method HTTP, query, parameter, validasi, status code, response JSON, CBL, kuis, dan Tugas 3 |
 | 11 | Kode praktikum Pertemuan 5 — [`code/pertemuan-05/`](./code/pertemuan-05/) | `package.json`, `app.js`, `server.js`, dan `latihan.js` — API resource `buku` dan latihan resource `mahasiswa` |
+| 12 | [Pertemuan 6 — `pertemuan-06/06-Pertemuan-6.md`](./pertemuan-06/06-Pertemuan-6.md) | Database dan ORM — konsep database relasional, skema Prisma, migration, koneksi, environment variable, CRUD dengan Prisma Client, CBL, kuis, dan Tugas 4 |
+| 13 | Kode praktikum Pertemuan 6 — [`code/pertemuan-06/`](./code/pertemuan-06/) | `package.json`, `prisma/schema.prisma`, `client.ts`, `app.ts`, `server.ts`, `latihan.ts`, dan `.env.example` — API database dengan Prisma ORM 7 (TypeScript) |
 
 ## Referensi Terkait
 
@@ -67,6 +69,13 @@
 - [MDN — HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) — status `2xx`, `4xx`, dan `5xx` pada response API
 - [Express.js — Routing](https://expressjs.com/en/guide/routing.html) — route path, method, parameter, dan handler
 - [Express.js — API reference](https://expressjs.com/en/5x/api.html) — `request.params`, `request.query`, `response.status`, dan `response.json`
+
+### 06-Pertemuan-6.md — Database dan ORM
+
+- [Prisma ORM Documentation](https://www.prisma.io/docs) — setup, skema, migration, dan Prisma Client
+- [Prisma — Getting started with Prisma and SQLite](https://www.prisma.io/docs/getting-started/quickstart) — inisialisasi Prisma dan migration pertama
+- [Prisma — Prisma Client](https://www.prisma.io/docs/reference/api-reference/prisma-client) — operasi `findMany`, `findFirst`, `create`, `update`, dan `delete`
+- [Node.js — Environment variables](https://nodejs.org/api/process.html#processenv) — membaca `process.env` dan penggunaan `.env`
 
 ### Timeline.md — Materi 16 Pertemuan
 
