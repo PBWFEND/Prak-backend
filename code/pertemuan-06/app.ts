@@ -36,9 +36,10 @@ app.get("/health", (_request: Request, response: Response) => {
 });
 
 app.get("/buku", async (request: Request, response: Response) => {
-  const { penulis, minStok } = request.query;
-  const penulisFilter = penulis !== undefined ? String(penulis) : undefined;
-  const minStokFilter = minStok !== undefined ? Number(minStok) : undefined;
+  const penulisFilter =
+    typeof request.query.penulis === "string" ? request.query.penulis : undefined;
+  const minStokRaw = request.query.minStok;
+  const minStokFilter = typeof minStokRaw === "string" ? Number(minStokRaw) : undefined;
 
   const data = await prisma.buku.findMany({
     where: {
@@ -55,8 +56,14 @@ app.get("/buku", async (request: Request, response: Response) => {
 });
 
 app.get("/buku/:id", async (request: Request, response: Response) => {
+  const idRaw = request.params.id;
+  const id = typeof idRaw === "string" ? Number(idRaw) : undefined;
+  if (id === undefined || Number.isNaN(id)) {
+    return sendError(response, 400, "Parameter id harus berupa bilangan bulat");
+  }
+
   const item = await prisma.buku.findFirst({
-    where: { id: Number(request.params.id) },
+    where: { id },
   });
 
   if (!item) {
@@ -99,7 +106,11 @@ app.post("/buku", async (request: Request, response: Response) => {
 });
 
 app.patch("/buku/:id", async (request: Request, response: Response) => {
-  const id = Number(request.params.id);
+  const idRaw = request.params.id;
+  const id = typeof idRaw === "string" ? Number(idRaw) : undefined;
+  if (id === undefined || Number.isNaN(id)) {
+    return sendError(response, 400, "Parameter id harus berupa bilangan bulat");
+  }
   const item = await prisma.buku.findFirst({ where: { id } });
   if (!item) return sendError(response, 404, "Buku tidak ditemukan");
 
@@ -121,7 +132,11 @@ app.patch("/buku/:id", async (request: Request, response: Response) => {
 });
 
 app.delete("/buku/:id", async (request: Request, response: Response) => {
-  const id = Number(request.params.id);
+  const idRaw = request.params.id;
+  const id = typeof idRaw === "string" ? Number(idRaw) : undefined;
+  if (id === undefined || Number.isNaN(id)) {
+    return sendError(response, 400, "Parameter id harus berupa bilangan bulat");
+  }
   const item = await prisma.buku.findFirst({ where: { id } });
   if (!item) return sendError(response, 404, "Buku tidak ditemukan");
 
