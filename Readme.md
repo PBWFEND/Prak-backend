@@ -87,3 +87,8 @@
 - [OWASP API Security Top 10](https://owasp.org/API-Security/) — keamanan API: validation, injection, auth (Minggu 11)
 - [Postman Learning Center](https://learning.postman.com/docs/) — testing & dokumentasi endpoint API (Minggu 13–14)
 - [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standar dokumentasi API / Swagger (Minggu 14)
+
+### Repository Kelas
+
+- https://github.com/PBWFEND/SI-VA-Backend
+- https://github.com/PBWFEND/SI-VB-Backend
