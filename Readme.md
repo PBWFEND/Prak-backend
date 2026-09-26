@@ -22,6 +22,8 @@
 | 11 | Kode praktikum Pertemuan 5 — [`code/pertemuan-05/`](./code/pertemuan-05/) | `package.json`, `app.js`, `server.js`, dan `latihan.js` — API resource `buku` dan latihan resource `mahasiswa` |
 | 12 | [Pertemuan 6 — `pertemuan-06/06-Pertemuan-6.md`](./pertemuan-06/06-Pertemuan-6.md) | Database dan ORM — konsep database relasional, skema Prisma, migration, koneksi, environment variable, CRUD dengan Prisma Client, CBL, kuis, dan Tugas 4 |
 | 13 | Kode praktikum Pertemuan 6 — [`code/pertemuan-06/`](./code/pertemuan-06/) | `package.json`, `prisma/schema.prisma`, `client.ts`, `app.ts`, `server.ts`, `latihan.ts`, dan `.env.example` — API database dengan Prisma ORM 7 (TypeScript) |
+| 14 | [Pertemuan 7 — `pertemuan-07/07-Pertemuan-7.md`](./pertemuan-07/07-Pertemuan-7.md) | CRUD REST API — pola service/controller, pengelompokan endpoint dengan `express.Router()`, penguatan validasi input, integrasi Express.js dengan database, CBL, kuis, dan Tugas 5 |
+| 15 | Kode praktikum Pertemuan 7 — [`code/pertemuan-07/`](./code/pertemuan-07/) | `app.ts`, `server.ts`, `client.ts`, `src/routes/buku.routes.ts`, `src/controller/buku.controller.ts`, `src/service/buku.service.ts`, dan `latihan.ts` — resource `buku` dengan pola lapis (TypeScript) |
 
 ## Referensi Terkait
 
@@ -76,6 +78,13 @@
 - [Prisma — Getting started with Prisma and SQLite](https://www.prisma.io/docs/getting-started/quickstart) — inisialisasi Prisma dan migration pertama
 - [Prisma — Prisma Client](https://www.prisma.io/docs/reference/api-reference/prisma-client) — operasi `findMany`, `findFirst`, `create`, `update`, dan `delete`
 - [Node.js — Environment variables](https://nodejs.org/api/process.html#processenv) — membaca `process.env` dan penggunaan `.env`
+
+### 07-Pertemuan-7.md — CRUD REST API
+
+- [Express.js — Routing](https://expressjs.com/en/guide/routing.html) — `express.Router()`, path resource, dan pemisahan endpoint per resource
+- [Express.js — Using middleware](https://expressjs.com/en/guide/using-middleware.html) — urutan pendaftaran middleware, error handler, dan 404
+- [MDN — HTTP status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) — pilihan status `201`, `404`, `204`, `400`, dan `500`
+- [Node.js — Error handling](https://nodejs.org/api/errors.html) — praktik error handling dan cara mengirim error antar lapisan
 
 ### Timeline.md — Materi 16 Pertemuan
 
