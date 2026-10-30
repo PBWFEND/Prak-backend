@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="xju4ec51WHoHUqN5DtlB">
+    <mxGraphModel dx="1075" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dWeIr6yTGd-F22TqAqc--3" edge="1" parent="1" source="dWeIr6yTGd-F22TqAqc--1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;fontFamily=Times New Roman;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--15" connectable="0" parent="dWeIr6yTGd-F22TqAqc--3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontFamily=Times New Roman;defaultLabelBackgroundColor=page;" value="HTTP Request (JSON)" vertex="1">
+          <mxGeometry relative="1" x="-0.1568" as="geometry">
+            <mxPoint x="60" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Client (Pengguna)" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--7" edge="1" parent="1" source="dWeIr6yTGd-F22TqAqc--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=none;startFill=0;endArrow=classic;endFill=1;" target="dWeIr6yTGd-F22TqAqc--6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--18" connectable="0" parent="dWeIr6yTGd-F22TqAqc--7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Query / simpan data" vertex="1">
+          <mxGeometry relative="1" x="-0.1848" as="geometry">
+            <mxPoint x="60" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--23" edge="1" parent="1" source="dWeIr6yTGd-F22TqAqc--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="dWeIr6yTGd-F22TqAqc--1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Back End (Node.js)" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--11" edge="1" parent="1" source="dWeIr6yTGd-F22TqAqc--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="dWeIr6yTGd-F22TqAqc--10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--19" connectable="0" parent="dWeIr6yTGd-F22TqAqc--11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Data hasil query" vertex="1">
+          <mxGeometry relative="1" x="0.0897" as="geometry">
+            <mxPoint x="50" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--6" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Database" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--13" edge="1" parent="1" source="dWeIr6yTGd-F22TqAqc--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="dWeIr6yTGd-F22TqAqc--12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--22" connectable="0" parent="dWeIr6yTGd-F22TqAqc--13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="HTTP Response (JSON)" vertex="1">
+          <mxGeometry relative="1" x="-0.0725" as="geometry">
+            <mxPoint x="70" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="HTTP Response" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="dWeIr6yTGd-F22TqAqc--12" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Client (Pengguna)" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="690" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
