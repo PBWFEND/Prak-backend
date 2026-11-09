@@ -32,6 +32,8 @@
 | 21 | Kode praktikum Pertemuan 10 — [`code/pertemuan-10/`](./code/pertemuan-10/) | `app.ts`, `server.ts`, `client.ts`, `src/service/token.service.ts`, `src/middleware/auth.middleware.ts`, route/controller auth dan protected, serta Prisma schema — protected API dengan role-based authorization |
 | 22 | [Pertemuan 11 — `pertemuan-11/11-Pertemuan-11.md`](pertemuan-11/11-Pertemuan-11.md) | Keamanan Backend dan API — input validation, SQL injection dan query terparameterisasi, security header, CORS, rate limiting, secret management, security checklist, kuis, dan tugas |
 | 23 | Kode praktikum Pertemuan 11 — [`code/pertemuan-11/`](./code/pertemuan-11/) | `app.ts`, `server.ts`, `client.ts`, `src/middleware/security.middleware.ts`, `src/middleware/validation.middleware.ts`, route/controller/service buku, dan README — API dengan lapisan keamanan |
+| 24 | [Pertemuan 12 — `pertemuan-12/12-Pertemuan-12.md`](pertemuan-12/12-Pertemuan-12.md) | Error Handling, Logging, dan Konfigurasi — alur error Express, `AppError`, error handler terpusat, logging terstruktur, korelasi request, konfigurasi environment tervalidasi, penghentian terkendali, kuis, dan tugas |
+| 25 | Kode praktikum Pertemuan 12 — [`code/pertemuan-12/`](./code/pertemuan-12/) | `app.ts`, `server.ts`, `client.ts`, `src/config/env.ts`, `src/logger/logger.ts`, `src/errors/app-error.ts`, `src/errors/error-handler.ts`, middleware request/keamanan/404, route/controller/service buku, dan README — API dengan ketahanan operasional |
 
 ## Referensi Terkait
 
